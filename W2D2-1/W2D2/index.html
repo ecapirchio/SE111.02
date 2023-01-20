@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--IN DOCUMENT STYLING-->
+    <style>
+        /*in here we write in CSS*/
+        /*SELECTING in CSS & Javascript: select specific elements or sets of elements within the page
+            *by ELEMENT type            ex: body, div, p
+            *by ID attribute            ex: #wrapper, #nav, #footer
+            *by CLASS attribute         ex: coming in week 3
+
+        */
+
+        div{
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element*/
+            margin:5px; /*adds space between element and others*/
+        }
+
+        #nav, #footer {
+            background-color:lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <div><!--this is the wrapper, and it wraps around all content-->
+    
+        <!--HEADER-->
+
+        <h1>Your name</h1>
+
+        <!--NAV-->
+        <div id="nav">
+
+            <!--EXTERNAL LINK: a link to a page outside of your website-->
+            <a href="https://meca.edu" target="_blank">Visit MECA</a>
+
+            <!--INTERNAL LINK: a link to a page inside of your website/root folder-->
+            <a href="page2.html">Page 2</a>
+
+            <!--IN PAGE JUMP LINK: a link to another section within the current page-->
+            <a href="#bio">BIO</a>
+            <a href="#schools">SCHOOLS</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/#NAV-->
+        
+        <!--BIO-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+
+            <img src="https://assets.reedpopcdn.com/Spidey-PC-SIte.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/Spidey-PC-SIte.jpg" alt="Spiderman" style="width: 500px">
+
+            <img src="images/stormsEnd.jpg" alt="Storm's end" style="width: 500px">
+
+        </div><!--/#BIO-->
+
+        <!--SCHOOLS-->
+        <div id="schools">
+
+            <h2>Schools</h2>
+
+            <ol>
+                <li>School 1</li>
+                <li>School 2</li>
+                <li>School 3</li>
+            </ol>
+
+            <img src="images/meca.jpg" alt="MECA" style="width: 500px">
+
+        </div><!--/#SCHOOLS-->
+
+        <!--HOBBIES-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Hobby 1</li>
+                <li>Hobby 2</li>
+                <li>Hobby 3</li>
+            </ul>
+
+        </div><!--/#HOBBIES-->
+    
+        <!--FOOTER-->
+        <div id="footer">
+
+            <a href="#nav">Back to Top</a>
+            <br>
+            <p>&copy; E CAPIRCHIO | SE111 | Winter 2023</p>
+            <br>
+            <!--VALIDATION SCREENSHOT-->
+            <img src="images/indexValidation.PNG" alt="validation of page" style="width:100%">
+
+        </div><!--/#FOOTER-->
+
+    </div>
+</body>
+</html>
