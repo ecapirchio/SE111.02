@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Week 3 - Multipage Bio">
+    <meta name="author" content="Emma Capirchio"> <!--name-->
+    <meta name="date" content="01/30/2023"> <!--date-->
+    <meta name="section" content="SE111.02"> <!--section-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3-multipage bio</title>
+</head>
+<body style="color: white">
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+    <div><!--this is the wrapper, and it wraps around all content-->
+    
+        <!--HEADER-->
+        <div id="Header">
+            <h1>Emma Capirchio - About Me</h1>
+            <style>
+                h1{
+                border:1px solid yellow;
+                padding:10px; /*adds space between content & border of element*/
+                margin:5px; /*adds space between element and others*/
+                }
+            </style>
+        </div>
+        
+        <!--NAV-->
+        <div id="nav">
+
+            <style>
+                #nav{
+                border:1px solid yellow;
+                padding:10px; /*adds space between content & border of element*/
+                margin:5px; /*adds space between element and others*/
+                }
+            </style>
+
+            <!--EXTERNAL LINK: a link to a page outside of your website-->
+            <a href="https://warwickonline.com/stories/emma-to-soon-soar-as-an-eagle-scout,172734" target="_blank">Eagle Scout Article</a>
+
+            <!--IN PAGE JUMP LINK: a link to another section within the current page-->
+            <a href="index.html">Bio</a>
+            <a href="schools.html">Schooling</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/#NAV-->
+
+        <!--HOBBIES-->
+        <div id="hobbies">
+
+            <style>
+                #hobbies{
+                border:1px solid yellow;
+                padding:10px; /*adds space between content & border of element*/
+                margin:5px; /*adds space between element and others*/
+                }
+            </style>
+
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Watching Football and Baseball</li>
+                <li>Coding</li>
+                <li>Playing Madden, The Show, and 2K</li>
+            </ul>
+
+            <img src="images/Atlanta_Falcons_Logo.png" alt="Atlanta Falcons Logo" style="width:300px">
+
+        </div><!--/#HOBBIES-->
+    
+        <!--FOOTER-->
+        <div id="footer">
+
+            <style>
+                #footer{
+                border:1px solid yellow;
+                padding:10px; /*adds space between content & border of element*/
+                margin:5px; /*adds space between element and others*/
+                }
+            </style>
+
+            <a href="#nav">Back to Top</a>
+            <br>
+            <p>&copy; E CAPIRCHIO | SE111 | Winter 2023</p>
+            <br>
+            <!--VALIDATION SCREENSHOT-->
+            <img src="images/Bio_Validation.png" alt="validation of page" style="width:100%">
+
+        </div><!--/#FOOTER-->
+
+    </div>
+</body>
+</html>
