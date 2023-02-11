@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emma Capirchio">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+    <form method="GET" action="confirm.html"><!--form element holds everything; method and action applied here!-->
+        <table>
+            <tbody><!--REQUIRED for tables!-->
+
+                <!--organize and develop row by row-->
+                <!--if made well first time, can be reused-->
+                <tr>
+                    <td>
+                        <label for="Labels">Labels</label>
+                    </td>
+
+                    <td>
+                        <label for="Form Fields">Form Fields</label>
+                    </td>
+                </tr>
+                <!--NEW ROW:___-->
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="names">Parent/Guardian Name:</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <input type="text" name="first" id="first">
+                        <br>
+                        <input type="text" name="last" id="last">
+                    </td>
+                </tr>
+
+                <!--NEW ROW:___-->
+                <tr>
+                    <!--LABEL-->
+                    <td>
+                        <label for="childName">Child's First Name:</label>
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+                        <input type="text" name="childName" id="last">
+                    </td>
+                </tr>
+</body>
+</html>
