@@ -54,7 +54,12 @@
 
         //INPUT --> gaining data from the user
         //prompt() --> input() in PYTHON
-        prompt(`Hello World!`)
+        //prompt() always returns STRINGS -> cast as a Number()
+        //assign return of prompt() to a var to use in rest of pro
+        var tip = Number(prompt(`Hello World! \nThe sum is ${sum.toFixed(2)}! \nEnter a number to add as a tip: $`))
+
+        var total = sum + tip //var total = sum + Number(tip)
+        alert(`Your total with tip is now: ${total.toFixed(2)}`)
 
     </script>
     

@@ -22,51 +22,51 @@
                 <!--if made well first time, can be reused-->
                 <tr>
                     <td>
-                        <label for="Labels">Labels</label>
+                        <label>Labels</label>
                     </td>
 
                     <td>
-                        <label for="Form Fields">Form Fields</label>
+                        <label>Form Fields</label>
                     </td>
                 </tr>
-                <!--NEW ROW:___-->
+                <!--PARENT/GUARDIAN NAME-->
                 <tr>
                     <!--LABEL-->
                     <td>
-                        <label for="names">Parent/Guardian Name</label>
+                        <label for="gfirst">Parent/Guardian Name</label>
                     </td>
 
                     <!--INPUT-->
                     <td>
-                        <input type="text" name="First Name" id="first" placeholder="First Name">
+                        <input type="text" required maxlength="20" name="gfirst" id="g-first" placeholder="First Name">
                         <br>
-                        <input type="text" name="Last Name" id="last" placeholder="Last Name">
+                        <input type="text" required maxlength="20" name="gfirst" id="g-last" placeholder="Last Name">
                     </td>
                 </tr>
 
-                <!--NEW ROW:___-->
+                <!--CHILD'S NAME-->
                 <tr>
                     <!--LABEL-->
                     <td>
-                        <label for="childName">Child's First Name</label>
+                        <label for="cfirst">Child's First Name</label>
                     </td>
 
                     <!--INPUT-->
                     <td>
-                        <input type="text" name="Child's First Name" id="childName" placeholder="Child's First Name">
+                        <input type="text" required name="cfirst" id="c-first" placeholder="Child's FirstName">
                     </td>
                 </tr>
 
-                <!--NEW ROW:___-->
+                <!--CHILD'S AGE-->
                 <tr>
                     <!--LABEL-->
                     <td>
-                        <label for="Child's Age">Child's Age</label>
+                        <label for="age">Child's Age</label>
                     </td>
 
                     <!--INPUT-->
                     <td>
-                        <input type="text" name="Child's Age" id="age">
+                        <input type="number" required name="age" value="3">
                     </td>
                 </tr>
 
@@ -74,7 +74,7 @@
                 <tr>
                     <!--LABEL-->
                     <td>
-                        <label for="dateandtime"><h1>Date and Time</h1></label>
+                        <label><h1>Date and Time</h1></label>
                     </td>
 
                     <!--BLANK-->
@@ -91,7 +91,7 @@
                     </td>
 
                     <td>
-                        <input type="date" name="Date" id="date">
+                        <input type="date" required name="date">
                     </td>
 
                 </tr>
@@ -100,24 +100,24 @@
                 <tr>
 
                     <td>
-                        <label for="startTime">Start Time </label>
+                        <label for="time">Start Time </label>
                     </td>
 
                     <td>
-                        <input type="time" name="Start Time" id="startTime">
+                        <input type="time" required name="time">
                     </td>
 
                 </tr>
 
-                <!--NEW ROW:___-->
+                <!--NUMBER OF GUESTS-->
                 <tr>
 
                     <td>
-                        <label for="numGuests">Number of Guests</label>
+                        <label for="guests">Number of Guests</label>
                     </td>
 
                     <td>
-                        <input type="text" name="Number of Guests" id="numGuests">
+                        <input type="number" name="guests" value="5">
                     </td>
 
                 </tr>
@@ -126,7 +126,7 @@
                 <tr>
                     <!--LABEL-->
                     <td>
-                        <label for="food"><h1>Food</h1></label>
+                        <label><h1>Food</h1></label>
                     </td>
 
                     <!--BLANK-->
@@ -135,7 +135,7 @@
                     </td>
                 </tr>
 
-                <!--RADIO BUTTON-->
+                <!--SIZE RADIO BUTTON-->
                 <tr>
 
                     <!--LABEL-->
@@ -145,17 +145,17 @@
 
                     <!--INPUT-->
                     <td>
-                        <input type="radio" name="Size"
-                        value="Sm">sm
-                        <input type="radio" name="Size"
-                        value="Med">med
-                        <input type="radio" name="Size"
-                        value="Lg">lg
+                        <input type="radio" name="size"
+                        value="sm">sm
+                        <input type="radio" name="size"
+                        value="med">med
+                        <input type="radio" name="size"
+                        value="lg">lg
                     </td>
 
                 </tr>
 
-                <!--CHECKBOXES-->
+                <!--DRINKS CHECKBOXES-->
                 <tr>
 
                     <td>
@@ -163,17 +163,22 @@
                     </td>
 
                     <td>
-                        <input type="checkbox" name="Drink1" value="Coke">Coke<br>
-                        <input type="checkbox" name="Drink2" value="Sprite">Sprite<br>
-                        <input type="checkbox" name="Drink3" value="Fruit Punch">Fruit Punch<br>
-                        <input type="checkbox" name="Drink4" value="Lemonade">Lemonade<br>
-                        <input type="checkbox" name="Drink5" value="Iced Tea">Iced Tea<br>
+                        <input type="checkbox" name="drink1" checked="true" value="coke"><label for="drink1">Coke</label><br>
+
+                        <input type="checkbox" name="drink2" value="sprite"><label for="drink2">Sprite</label><br>
+
+                        <input type="checkbox" name="drink3" value="fruit punch"><label for="drink3">fruit punch</label><br>
+
+                        <input type="checkbox" name="drink4" value="lemonade"><label for="drink4">lemonade</label><br>
+
+                        <input type="checkbox" name="drink5" value="iced tea"><label for="drink5">iced tea</label><br>
 
                     </td>
 
                 </tr>
 
                 <!--<select> element creates a drop down menu-->
+                <!--CAKE-->
                     <tr>
                         <!--LABEL-->
                         <td>
@@ -182,12 +187,11 @@
     
                         <!--INPUT-->
                         <td>
-                            <select name="Cake">
+                            <select name="cake">
     
-                                <option value="Chocolate">Chocolate</option>
-                                <option value="Vanilla">Vanilla</option>
-                                <option value="Velvet">Red Velvet</option>
-                                <option value="Other">Other</option>
+                                <option>Chocolate</option>
+                                <option>Vanilla</option>
+                                <option>I'll bring my own</option>
     
                             </select>
                         </td>
@@ -197,7 +201,7 @@
                 <tr>
                     <!--LABEL-->
                     <td>
-                        <label for="decorations"><h1>Decorations</h1></label>
+                        <label><h1>Decorations</h1></label>
                     </td>
 
                     <!--BLANK-->
@@ -206,22 +210,22 @@
                     </td>
                 </tr>
                 
-<!--MISSING COLOR SCHEME-->
+                <!--COLOR SCHEME-->
                 <tr>
                     <!--LABEL-->
                     <td>
-                        <label for="colorScheme">Color Scheme</label>
+                        <label for="colors">Color Scheme</label>
                     </td>
 
                     <!--INPUT-->
                     <td>
-                        <label name="color" id="colorScheme">Choose a color scheme for the party</label>
+                        <label name="colors">Choose a color scheme for the party</label>
                         <br>
-                        <input type="color" name="Color Scheme" id="colorScheme">
+                        <input type="color" name="colors">
                     </td>
                 </tr>
 
-                <!--NEW ROW:___-->
+                <!--COMMENTS-->
                 <tr>
                     <!--LABEL-->
                     <td>
@@ -230,7 +234,7 @@
 
                     <!--INPUT-->
                     <td>
-                        <textarea name="Additional Comments" id="comments" placeholder="Please add any additional comments"></textarea>
+                        <textarea placeholder="Please add any additional comments" name="comments"></textarea>
                     </td>
                 </tr>
 
@@ -243,7 +247,7 @@
 
                     <!--INPUT-->
                     <td>
-                        <input type="submit" value="submit!"> 
+                        <input type="submit" value="Submit"> 
                     </td>
                 </tr>
             </tbody>
