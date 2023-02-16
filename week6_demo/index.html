@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Emma Capirchio">
+    <meta name="description" content="W5 Demo">
+
+    <title>W6 | Intro to JS</title>
+</head>
+<body>
+    <!--Ideally, we should have some sort of HTML in the file-->
+    <h1>Week 6 Intro Demo | JavaScript</h1>
+    <!--<script> tags almost always go after any pre-written HTML (ie at the end of the <body>)-->
+    <!--IN DOCUMENT JAVASCRIPT below-->
+    <script>
+        //everything inside of the <script> tags MUST be written in JAVASCRIPT
+
+        //creating (declaring) a variable --keyword 'var'
+        var num1 = 10
+        var num2 = 7
+
+        //cannot use num1 or num2 until they have been assigned data (=)
+        //variable assignment --> DEFINITION
+
+        /*var sum = num1 + num2*/ var sum = num1 + num2
+        //var sum = (num1 + num2).toFixed(2) !forever!
+
+        //OUTPUT --> displaying data out of the program
+        //output display for testing --> console.log()
+        console.log(sum) //displaying 1 stored value
+        
+        /* console.log() is only for the developer & for testing to access the developer tools:
+            *hit F12 on Windows/PC
+            *click into the developer tools from the browser menu ...> more tools > developer tools */
+        
+        console.log(num1, num2, num3) //display multiple stored values
+        console.log("hello world!") //display message only
+        console.log(num1 + " + " + num2 + "=" + sum) //traditional string message mixed with stored value
+
+        //literal strings --> these us `` not ''
+        //${VAR} displays stored value from var names
+        console.log(`${num1} + ${num2} = ${sum}`)
+        console.log(`${num1} + ${num2} = ${sum.toFixed(2)}`) //used for rounding decimal places
+
+        //output display for user --> alert()
+        //alert() --> print() in PYTHON
+        //alert(`The sum is: ${sum}!`) //popup
+
+        //escape sequences also work in strings " ", ' ', ` `
+        //\t --> tab space, \n --> new line
+
+        //INPUT --> gaining data from the user
+        //prompt() --> input() in PYTHON
+        prompt(`Hello World!`)
+
+    </script>
+    
+</body>
+</html>
