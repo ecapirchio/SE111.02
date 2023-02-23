@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Katie Truchon 202040">
+<meta name="author" content="Emma Capirchio">
 <meta name="description" content="Week 6 JS Intro">
-<title>Week 6 | JS Intro</title>
+<title>Week 6 | Pay Calculator</title>
 </head>
 
 <body>
    <!--we should have some sort of HTML in the file-->
-   <h1>Week 6 Intro Demo | Javascript</h1>
+   <h1>Week 6 Pay Calculator | Javascript</h1>
    
    <!--IN-DOCUMENT JAVASCRIPT-->
    <!--in-document: lives within the .html (you saw this with CSS)-->
@@ -24,8 +24,16 @@
     let taxAmt = gross * 0.2;
     let net = gross - taxAmt;
 
-    console.log(
+    console.log(`Gross Pay: $${gross.toFixed(2)}`);
+    console.log(`Uncle Sam's Share: $${taxAmt.toFixed(2)}`);
+    console.log(`User's Net Pay: $${net.toFixed(2)}`);
+    
+    alert(
     `Gross Pay: $${gross.toFixed(2)}\nUncle Sam's Share: $${taxAmt.toFixed(2)}\nUser's Net Pay: $${net.toFixed(2)}`
     );
+
     </script>
+
+    <!--VALIDATION SCREENSHOT-->
+    <img src="images/w6_index_validation.png" alt="validation of page" style="width:100%">
 </body>

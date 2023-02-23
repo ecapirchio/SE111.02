@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W7D2 | Javascript Demo</title>
+</head>
+<body>
+
+    <h1>W7D2 - Javascript Selector & Event Demo</h1>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <!--left side: questions-->
+                <td>
+                    <label for="first" class="questions">FIRST: </label>
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    <input type="text" name="first" id="first">
+
+                </td>
+            </tr>
+
+            <tr>
+                <!--left side: questions-->
+                <td>
+                    <label for="last" class="questions">LAST: </label>
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    <input type="text" name="last" id="last">
+
+                </td>
+            </tr>
+
+            <tr>
+                <!--left side: questions-->
+                <td>
+                    <label for="age" class="questions">AGE: </label>
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    <input type="text" name="age" id="age">
+
+                </td>
+            </tr>
+
+            
+            <tr>
+                <!--left side: questions-->
+                
+                <td>
+                    <br>
+                    <br>
+                   <input type="button" id="enter-button" value="ENTER">
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    
+
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <br>
+    <br>
+
+    <!--a div to hold some info from the form-->
+
+    <h2 id="hello">Hello</h2>
+
+    <div id="info" style="border:1px solid black; width:500px; height:200px;">
+    
+    </div><!--# info-->
+
+    <br>
+    <br>
+    <br>
+
+    <!--not just buttons can have click events!-->
+
+    <p id="me">
+        Click!
+    </p>
+
+    <p id="you">
+        Click!
+    </p>
+
+    <input type="button" id="submit" value="COOL STUFF!">
+
+    <br><br><br><br><br>
+    <p>end</p>
+    <!--IN-DOCUMENT JAVASCRIPT BELOW-->
+    <script>
+        //selecting elements from the HTML doc --> 'document' current HTML file
+        //the body element
+        //global variable: var declared outside of a function
+        var body = document.querySelector(`body`)
+
+        consol.log(body) //for testing
+
+        //create a new variable to hold a NEW HTML element
+        //global variable 'newP'
+        var newP = ``
+        newP += `<p>` //newP = newP + `<p>`
+        newP += `hello world! this content was added to the page using javascript!`
+        newP += `</p>`
+
+        console.log(newP)
+
+        //adding new HTML element info (built in JS) to the *end* of the body element
+        //.innerHTML is an attribute all HTML elements with open and close tags have
+        body.innerHTML += newP
+
+        console.log(body) //for testing
+
+        //accessing HTML attributes
+        body.id = `main-body`
+        console.log(body) //for testing
+
+        //set up an actionable event so that when the #enter-button is clicked, information is written to the page. FIRST: add event listener to the button for the event (action)
+        document.querySelector(`#enter-button`).addEventListener(`click`, alertInfo)
+
+        function alertInfo(e)
+        {
+            //local variables: their value only exists inside of alertInfo()
+            //these local variable will hold the VALUES from the mini form input elements
+            var fname = document.querySelector(`#first`)
+            var lname = document.querySelector(`#last`).value
+            console.log(fname)
+            console.log(lname)
+
+            var age = Number(document.querySelector(`#age`).value)
+
+            console.log(fname, lname, age)
+
+            //once values have been stored, we can use em!
+            var full = fname + `` + lname
+            alert(`hi there ${full}!`)
+            
+        }//alertInfo() CLOSE
+
+	</script>
+	
+</body>
+</html>
