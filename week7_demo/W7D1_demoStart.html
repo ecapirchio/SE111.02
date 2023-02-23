@@ -149,8 +149,94 @@
             //once values have been stored, we can use em!
             var full = fname + `` + lname
             alert(`hi there ${full}!`)
-            
+
+            if (age >= 18) //must include () for JS conditions
+            {
+                alert(`you are old enough to vote!`)
+            }
+            else
+            {
+                alert(`you are too young to vote!`)
+            }
+
+            //select the #hello element and add the user's full name to it directly in the page
+            var hello = document.querySelector(`#hello`)
+
+            //change the hello text to include user's name:
+            hello.innerHTML += ` ${full}!`
+
+            //document.querySelector(`#hello`).innerHTML += ` ${full}!`
+
+            //calculate age in dog and cat years
+            var dog_age = (age * 7).toFixed(1)
+            var cat_age = (age * 4).toFixed(1)
+
+            //test values before writing to the HTML
+            console.log(`Dog Age: ${dog_age} yrs \nCat Age: ${cat_age} yrs`)
+
+            //store the element where we will write the new HTML content to and then edit is innerHTML
+            var info = document.querySelector(`#info`)
+            info.innerHTML += `<p> Here is some info on the age you entered <br><br> Dog Age: ${dog_age} yrs \nCat Age: ${cat_age} yrs </p>`
+
+
         }//alertInfo() CLOSE
+
+        //global variables - can be used in any function AFTER this
+        var me = document.querySelector(`#me`)
+        var you = document.querySelector(`#you`)
+
+        console.log(me)
+
+        //adding event listener to non-button elements
+        me.addEventListener(`click`, clicked)
+
+        function clicked(e)
+        {
+            console.log(`clicked() reached!`)
+
+            me.style.color = "red"
+            me.style.fontSize = "24px"
+        }
+
+        you.addEventListener(`click`, greenClick)
+        var clickCount = 0
+        function greenClick(e)
+        {
+            console.log(`greenClick() reached!`)
+            clickCount += 1
+
+            if(clickCount == 1)
+            {
+                you.style.color = `rgb(0, 255, 0)`
+                you.style.backgroundColor = `black`
+            }
+            else if(clickCount == 2)
+            {
+                you.style.color = `rgb(255, 0, 0)`
+            }
+            else if(clickCount == 3)
+            {
+                you.style.color = `rgb(0, 0, 255)`
+            }
+            else
+            {
+                you.style.color = `black`
+                you.style.background = `grey`
+                clickCount = 0
+            }
+        }//end of greenClick()
+
+        //selecting another button on the page
+        var button = document.querySelector(`submit`)
+
+        //anonymouse/call back function below - has NO name, we immediately write the function definition as a part of the greater function call - used when the function will not be reused
+        button.addEventListener(`click`, function(event){
+
+            //check out the event parameter!
+            console.log(event)
+
+            }//end of the anonymous function
+        )//end of event listener call
 
 	</script>
 	
