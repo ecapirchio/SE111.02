@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--edit the meta tag below to hold YOUR name!-->
-    <meta name="author" content="__YOUR NAME HERE!__">
+    <meta name="author" content="Emma Capirchio">
     <meta name="description" content="Week 7 Assignment practicing Javascript & HTML">
     <title>Week 7 | Pay Form Calculator Assignment</title>
 </head>
@@ -17,32 +17,59 @@
    <!--each <input> must have an id that matches its corresponding label -->
    <!--each form element is separated by a break space (new line) -->
     <form>
-        <label for="first">First Name: </label>
-        <input type="text" id="">
+        <table>
 
-        <br>
+            <!--FIRST NAME-->
+            <tr>
+                <td>
+                    <label for="first">First Name: </label>
+                </td>
 
-        <label for="last">Last Name: </label>
-        <input type="text" id="">
+                <td>
+                    <input type="text" id="first">
+                </td>
+            </tr>
 
-        <br>
+            <!--LAST NAME-->
+            <tr>
+                <td>
+                    <label for="last">Last Name: </label>
+                </td>
 
-        <label for="hours">Hours Worked: </label>
-        <input type="text" id="">
+                <td>
+                    <input type="text" id="last">
+                </td>
+            </tr>
 
-        <br>
+            <!--HOURS WORKED-->
+            <tr>
+                <td>
+                    <label for="hours">Hours Worked: </label>
+                </td>
 
-        <label for="rate">Hourly Rate: </label>
-        <input type="text" id="">
+                <td>
+                    <input type="text" id="hours">
+                </td>
+            </tr>
+            
+            <!--HOURLY RATE-->
+            <tr>
+                <td>
+                    <label for="rate">Hourly Rate: </label>
+                </td>
 
-        <br>
+                <td>
+                    <input type="text" id="rate">
+                </td>
+            </tr>
 
-        <br>
+        </table>
+    </form>
 
 
 
         <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-        <input type="button" id="" value="Enter">
+        <input type="button" id="enter-button" value="Enter">
 
         <br>
         <br>
@@ -68,7 +95,7 @@
 
     <script>
         //edit the below statement to select the #enter-button id from the HTML file
-        document.querySelector().addEventListener(`click`, alertName)
+        document.querySelector(`#enter-button`).addEventListener(`click`, alertName)
         
         
 
@@ -82,57 +109,86 @@
             hours --> hours worked, #hours
             rate --> hourly rate, #rate */
             
+            var fname = document.querySelector(`#first`).value
+            var lname = document.querySelector(`#last`).value
+            var hours = document.querySelector(`#hours`).value
+            var rate = document.querySelector(`#rate`).value
+
 
 
             //console.log() all four values
             
-            console.log()
-            console.log()
-            console.log()
-            console.log()
+            console.log(fname)
+            console.log(lname)
+            console.log(hours)
+            console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full 
+            var full = fname + ` ` + lname
 
             //console.log() the full name value
-            console.log()
+            console.log(`${full}`)
 
 
             //convert both hours and rate to Number() data types
             
-
+            var hours = Number(document.querySelector(`#hours`).value)
+            var rate = Number(document.querySelector(`#rate`).value)
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
 
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
             
+            var gross = (rate * hours) * 2;
+            var taxAmt = gross * 0.2;
+            var net = gross - taxAmt;
+
 
             //console.log() all three processed values, rounded to the second decimal place
-            console.log(.toFixed(2))
+            console.log(gross.toFixed(2))
+            console.log(taxAmt.toFixed(2))
+            console.log(net.toFixed(2))
 
 
-            //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = ``
+            //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place
+            var finalMessage = `<p>Gross Pay: ${gross.toFixed(2)}<br>Tax amount: ${taxAmt.toFixed(2)}<br>Net pay: ${net.toFixed(2)}<br></p>` //doesn't print to console without also printing <p></p> and <br>
 
-        
             //create a new var called 'info' and store the entire #info *HTML element* to it
-
+            var info = document.querySelector(`#info`)
 
             //create a new var called 'num' and store the entire #check *HTML element* to it
-            
+            var num = document.querySelector(`#check`)
 
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
+            // Get the element with the ID 'info'
+            info = document.querySelector('#info');
 
 
+            // Set its innerHTML to the value of 'finalMessage'
+            info.innerHTML += finalMessage
+
+            console.log(info.innerHTML)
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
+            // Get the element with the ID 'check'
+            var check = document.querySelector('#check');
 
+            // Format the values as strings rounded to 2 decimal places
+            
+            var grossPayString = gross.toFixed(2);
+            var taxAmountString = taxAmt.toFixed(2);
+            var netPayString = net.toFixed(2);
+
+            // Set the innerHTML of the 'check' element with the formatted values
+            
+            check.innerHTML = `Gross pay: ${grossPayString}<br>Tax amount: ${taxAmountString}<br>Net pay: ${netPayString}`; //doesn't print to console without also printing <p></p> and <br>
 
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
-
+            document.querySelector(`#submit`).addEventListener(`click`, submitNow)
+            
         
             function submitNow(e)
             {
@@ -140,7 +196,7 @@
                 /*NOTE FOR TESTING:
                     *if written correctly, you will see an alert() with all info entered as well as processed!*/
 
-                alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${gross.toFixed(2)}\nTAX AMOUNT: $${taxAmount.toFixed(2)}\nNET PAY: $${net.toFixed(2)}`)
+                alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${gross.toFixed(2)}\nTAX AMOUNT: $${taxAmt.toFixed(2)}\nNET PAY: $${net.toFixed(2)}`)
             }
             
         }
