@@ -1,43 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Week 1">
-    <meta name="author" content="Emma Capirchio">
+    <meta name="description" content="Week 2 - Bio">
+    <meta name="author" content="Emma Capirchio"> <!--name-->
+    <meta name="date" content="01/25/2023"> <!--date-->
+    <meta name="section" content="SE111.02"> <!--section-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SE111|W1</title>
-    <div>
-        <style>
-            div{
-            border:1px solid blue;
-            padding:10px; /*adds space between content & border of element*/
-            margin:5px; /*adds space between element and others*/
-            }
-        </style>
-        <h1>
-            Emma Capirchio
-            <style>
-                h1{
-                border:1px solid magenta;
-                padding:10px; /*adds space between content & border of element*/
-                margin:5px; /*adds space between element and others*/
-                }
-            </style>
-        </h1>
-        <p>
-            I can play <b>five</b> different instuments. I love watching <u>baseball</u> and <u>football</u>. I am very <i>Italian</i>. I have twin brothers.
-            <style>
-                p{
-                border:1px solid green;
-                padding:10px; /*adds space between content & border of element*/
-                margin:5px; /*adds space between element and others*/
-                }
-            </style>
-        </p>
-    </div>
+    <title>w1-bio</title>
 </head>
 <body>
+    <div><!--this is the wrapper, and it wraps around all content-->
     
+        <!--HEADER-->
+        <div id="Header">
+            <h1>Emma Capirchio - About Me</h1>
+        </div>
+        
+        <!--NAV-->
+        <div id="nav">
+
+            <!--EXTERNAL LINK: a link to a page outside of your website-->
+            <a href="https://warwickonline.com/stories/emma-to-soon-soar-as-an-eagle-scout,172734" target="_blank">Eagle Scout Article</a>
+
+            <!--IN PAGE JUMP LINK: a link to another section within the current page-->
+            <a href="#bio">Bio</a>
+            <a href="#schooling">Schooling</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/#NAV-->
+        
+        <!--BIO-->
+        <div id="bio">
+
+            <h2>Bio</h2>
+
+            <p>Hi, my name is Emma Capirchio. I love <u>baseball</u>, <u>basketball</u>, and <u>football</u>. I spend my Sunday's during football season watching the <b>Atlanta Falcons</b> and my late nights during baseball season watching the <b>LA Dodgers</b>. Since I was little, I have always been a huge <i>Spiderman</i> fan. I live with my parents (middle) and my brothers (bottom right), but being in a very Italian family, see extended family just as much (top left). When I'm not watching sports, I'm with my work friend(left middle), my best friend (top right and bottom left), or my girlfriend (right middle and bottom middle). I was also the <em>first</em> female Eagle Scout in my troop.</p>
+
+            <img src="https://assets.reedpopcdn.com/Spidey-PC-SIte.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/Spidey-PC-SIte.jpg" alt="Spiderman" style="width: 500px">
+
+            <img src="images/Friends_and_Family_Collage.jpg" alt="My family and friends" style="width:300px">
+
+        </div><!--/#BIO-->
+
+        <!--SCHOOLS-->
+        <div id="schooling">
+
+            <h2>Schooling</h2>
+
+            <ol>
+                <li>New England Institute of Technology</li>
+                <li>Rhode Island School of Design</li>
+                <li>Cranston High School West</li>
+            </ol>
+
+            <img src="images/RISD_Logo.png" alt="RISD" style="width:300px">
+
+        </div><!--/#SCHOOLS-->
+
+        <!--HOBBIES-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Watching Football and Baseball</li>
+                <li>Coding</li>
+                <li>Playing Madden, The Show, and 2K</li>
+            </ul>
+
+            <img src="images/Atlanta_Falcons_Logo.png" alt="Atlanta Falcons Logo" style="width:300px">
+
+        </div><!--/#HOBBIES-->
+    
+        <!--FOOTER-->
+        <div id="footer">
+
+            <a href="#nav">Back to Top</a>
+            <br>
+            <p>&copy; E CAPIRCHIO | SE137 | Spring 2023</p>
+            <br>
+
+        </div><!--/#FOOTER-->
+
+    </div>
 </body>
 </html>

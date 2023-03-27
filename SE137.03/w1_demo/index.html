@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <a href = "#">red</a>
+    <a href = "#">blue</a>
+    <input type="range" min="0" max="255">
+    <script>
+        var body = document.querySelector(`body`);
+        var a = document.querySelectorAll(`a`);
+        console.log(a.classList)
+        a[0].addEventListener(`click`, turnRed);
+        a[1].addEventListener(`click`, turnRed);
+        body.addEventListener(`click`, turnRed);
+        
+        function turnRed(e)
+        {
+            e.preventDefault();
+            body.style.backgroundColor = e.target.classList [0];
+        }
+
+        document.querySelector(`input`).addEventListener(`mousemover`, function(e){
+            console.log(e.target.value)
+            body.style.backgroundColor = `rgb(${e.target.value},0,0)`;
+        })
+        
+    </script>
+</body>
+</html>
