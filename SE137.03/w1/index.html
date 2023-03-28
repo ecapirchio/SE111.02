@@ -3,105 +3,95 @@
 <head>
     <meta name="description" content="Week 1 - Bio">
     <meta name="author" content="Emma Capirchio"> <!--name-->
-    <meta name="date" content="01/25/2023"> <!--date-->
-    <meta name="section" content="SE111.02"> <!--section-->
+    <meta name="date" content="03/27/2023"> <!--date-->
+    <meta name="section" content="SE137.03"> <!--section-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>w1-bio</title>
-
     <style>
         .hide{
             display:none;
         }
+        /*
+        comment
+        */
+        h2{
+            font-size:12px;
+        }
+        body{
+            background-color:rgba(0, 20, 255, 0.5);
+        }
     </style>
 </head>
 <body>
-    <div><!--this is the wrapper, and it wraps around all content-->
-    
-        <!--HEADER-->
-        <div id="Header">
-            <h1>Emma Capirchio - About Me</h1>
+    <h1>Emma Capirchio</h1>
+   <div id="nav">
+    <a href="#">bio</a> 
+    <a href="#">eduation</a> 
+    <a href="#">hobbies</a> 
+   </div>
+   <div id="main">
+        <!--#BIO-->
+        <div id="bio" class="content">
+            <h2>Bio</h2>
+                
+            <p>Hi, my name is Emma Capirchio. I love <u>baseball</u>, <u>basketball</u>, and <u>football</u>. I spend my Sunday's during football season watching the <b>Atlanta Falcons</b> and my late nights during baseball season watching the <b>LA Dodgers</b>. Since I was little, I have always been a huge <i>Spiderman</i> fan. I live with my parents (middle) and my brothers (bottom right), but being in a very Italian family, see extended family just as much (top left). When I'm not watching sports, I'm with my work friend(left middle), my best friend (top right and bottom left), or my girlfriend (right middle and bottom middle). I was also the <em>first</em> female Eagle Scout in my troop.</p>
+
+            <img src="https://assets.reedpopcdn.com/Spidey-PC-SIte.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/Spidey-PC-SIte.jpg" alt="Spiderman" style="width: 500px">
+
+            <img src="images/Friends_and_Family_Collage.jpg" alt="My family and friends" style="width:300px">
+
+        </div><!--/#BIO-->
+
+        <!--SCHOOLS-->
+        <div id="ed" class="content">
+            <h2>Education</h2>
+
+            <ol>
+                <li>New England Institute of Technology</li>
+                <li>Rhode Island School of Design</li>
+                <li>Cranston High School West</li>
+            </ol>
+
+            <img src="images/RISD_Logo.png" alt="RISD" style="width:300px">
         </div>
-        
-        <!--NAV-->
-        <div id="nav">
 
-            <!--EXTERNAL LINK: a link to a page outside of your website-->
-            <a href="https://warwickonline.com/stories/emma-to-soon-soar-as-an-eagle-scout,172734" target="_blank">Eagle Scout Article</a>
+        <!--HOBBIES-->
+        <div id="hobbies" class="content">
+            <h2>Hobbies</h2>
 
-            <!--IN PAGE JUMP LINK: a link to another section within the current page-->
-            <a href="#bio">bio</a>
-            <a href="#ed">education</a>
-            <a href="#hobbies">hobbies</a>
-            <a href="#footer">Bottom of Page</a>
+            <ul>
+                <li>Watching Football and Baseball</li>
+                <li>Coding</li>
+                <li>Playing Madden, The Show, and 2K</li>
+            </ul>
 
-        </div><!--/#NAV-->
-        
-        <div id="main">
-            <!--BIO-->
-            <div id="bio">
-
-                <h2>Bio</h2>
-
-                <p>Hi, my name is Emma Capirchio. I love <u>baseball</u>, <u>basketball</u>, and <u>football</u>. I spend my Sunday's during football season watching the <b>Atlanta Falcons</b> and my late nights during baseball season watching the <b>LA Dodgers</b>. Since I was little, I have always been a huge <i>Spiderman</i> fan. I live with my parents (middle) and my brothers (bottom right), but being in a very Italian family, see extended family just as much (top left). When I'm not watching sports, I'm with my work friend(left middle), my best friend (top right and bottom left), or my girlfriend (right middle and bottom middle). I was also the <em>first</em> female Eagle Scout in my troop.</p>
-
-                <img src="https://assets.reedpopcdn.com/Spidey-PC-SIte.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/Spidey-PC-SIte.jpg" alt="Spiderman" style="width: 500px">
-
-                <img src="images/Friends_and_Family_Collage.jpg" alt="My family and friends" style="width:300px">
-
-            </div><!--/#BIO-->
-
-            <!--SCHOOLS-->
-            <div id="ed">
-
-                <h2>Education</h2>
-
-                <ol>
-                    <li>New England Institute of Technology</li>
-                    <li>Rhode Island School of Design</li>
-                    <li>Cranston High School West</li>
-                </ol>
-
-                <img src="images/RISD_Logo.png" alt="RISD" style="width:300px">
-
-            </div><!--/#SCHOOLS-->
-
-            <!--HOBBIES-->
-            <div id="hobbies">
-
-                <h2>Hobbies</h2>
-
-                <ul>
-                    <li>Watching Football and Baseball</li>
-                    <li>Coding</li>
-                    <li>Playing Madden, The Show, and 2K</li>
-                </ul>
-
-                <img src="images/Atlanta_Falcons_Logo.png" alt="Atlanta Falcons Logo" style="width:300px">
-
-            </div><!--/#HOBBIES-->
-    
-    </div>
+            <img src="images/Atlanta_Falcons_Logo.png" alt="Atlanta Falcons Logo" style="width:300px">
+        </div><!--/#HOBBIES-->    
     </div>
 
     <script>
         var a = document.querySelectorAll(`#nav a`);
         
-        a[0].addEventListener(`click`, function(e){
-            e.preventDefault();
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, function(e){
+                e.preventDefault();
 
-            var div = document.querySelectorAll(`.content`);
+                var div = document.querySelectorAll(`.content`);
 
-            for(let i=0; i<div.length; i++)
-            {
-                div[i].classList.add(`hide`);
-            }
+                for(let i=0; i<div.length; i++)
+                {
+                    div[i].classList.add(`hide`);
+                }
 
-            div.classList.remove(`hide`);
-        
-        })
+               div[i].classList.remove(`hide`);
+                
+            })
+        }
+
+      
     </script>
-
 </body>
 </html>
