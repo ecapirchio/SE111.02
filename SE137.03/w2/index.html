@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Week 2 - Bio">
+    <meta name="author" content="Emma Capirchio"> <!--name-->
+    <meta name="date" content="04/03/2023"> <!--date-->
+    <meta name="section" content="SE137.03"> <!--section-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w2-bio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Emma Capirchio</h1>
+    
+    <div id="nav" class="nav">
+        <div id="left" class="left">
+        <a href="#">BIO</a>
+        </div>
+
+        <div id="middle" class="middle">
+        <a href="#">EDUCATION</a> 
+        </div>
+        
+        <div id="right" class="right">
+        <a href="#">HOBBIES</a>
+        </div>
+    </div>
+
+   <div id="main">
+        <!--#BIO-->
+        <div id="bio" class="content">
+            
+            <h2>Bio</h2>
+                
+            <p>Hi, my name is Emma Capirchio. I love <u>baseball</u>, <u>basketball</u>, and <u>football</u>. I spend my Sunday's during football season watching the <b>Atlanta Falcons</b> and my late nights during baseball season watching the <b>LA Dodgers</b>. Since I was little, I have always been a huge <i>Spiderman</i> fan.<br>I live with my parents (middle) and my brothers (bottom right), but being in a very Italian family, see extended family just as much (top left). A big thing in my immediate family is traveling. Since turning 7, I have been out of the country a number of times. We've vacationed in places such as Italy, Mexico, Dominican Republic, and Turks and Caicos. When I'm not watching sports or traveling, I'm with my work friend(left middle), my best friend (top right and bottom left), or my girlfriend (right middle and bottom middle). I was also the <em>first</em> female Eagle Scout in my troop.</p>
+
+            <img src="https://assets.reedpopcdn.com/Spidey-PC-SIte.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/Spidey-PC-SIte.jpg" alt="Spiderman" style="width: 500px">
+
+            <img src="images/Friends_and_Family_Collage.jpg" alt="My family and friends" style="width:300px">
+
+            
+
+        </div><!--/#BIO-->
+
+        <!--SCHOOLS-->
+        <div id="ed" class="content">
+            <h2>Education</h2>
+
+            <ul>
+                <li><a href="https://www.neit.edu/" target="_blank">New England Institute of Technology</a></li>
+                <li><a href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a></li>
+                <li><a href="https://chsw.cpsed.net/" target="_blank">Cranston High School West</a></li>
+            </ul>
+
+            <img src="images/RISD_Logo.png" alt="RISD" style="width:300px" style="margin-left: 20px;">
+            
+        </div>
+
+        <!--HOBBIES-->
+        <div id="hobbies" class="content">
+            <h2>Hobbies</h2>
+
+            <ol>
+                <li>Watching Football and Baseball</li>
+                <li>Coding</li>
+                <li>Playing Madden, The Show, and 2K</li>
+            </ol>
+
+            <img src="images/Atlanta_Falcons_Logo.png" alt="Atlanta Falcons Logo" style="width:300px">
+            <hr>
+        </div><!--/#HOBBIES-->    
+
+        <!--FOOTER-->
+        <div id="footer" class="footer">
+            <p>&copy; E CAPIRCHIO | W1 Assignment</p>
+        </div><!--/#FOOTER-->
+    </div>
+
+
+    <script>
+        var a = document.querySelectorAll(`#nav a`);
+        
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, function(e){
+                e.preventDefault();
+
+                var div = document.querySelectorAll(`.content`);
+
+                for(let i=0; i<div.length; i++)
+                {
+                    div[i].classList.add(`hide`);
+                }
+
+               div[i].classList.remove(`hide`);
+                
+            })
+        }
+
+    
+    </script>
+</body>
+</html>
