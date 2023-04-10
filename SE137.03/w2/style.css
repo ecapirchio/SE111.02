@@ -22,6 +22,8 @@ div{
     box-shadow: 0 0 25px black;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
 }
 
 .hide{
@@ -32,6 +34,8 @@ div{
         font-size:36px;
         color: white;
         text-indent: 10px;
+        font-family: fantasy;
+        font-weight: 200;
     }
     body{
         background: rgb(34,193,195);
