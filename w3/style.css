@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.hide{
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'head head head head head head'
+      'bio bio bio bio bio bio'
+      'bio bio bio bio bio bio'
+      'hobbies hobbies hobbies schooling schooling schooling'
+      'hobbies hobbies hobbies schooling schooling schooling'
+      'footer footer footer footer footer footer';
+  }
+
+.item1{
+    grid-area: head;
+    text-align: center;
+    background-color: #134877;
+    margin-bottom: 10px;
+}
+
+.item2{
+    grid-area: bio;
+    text-align: center;
+    height: 500px;
+}
+
+.item3{
+    grid-area: schooling;
+    text-align: left;
+    width: 800px;
+}
+
+.item4{
+    grid-area: hobbies;
+    text-align: left;
+    height: 500px;
+    width: 1200px;
+    background-image: url(images/Atlanta_Falcons_Logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 10px;
+}
+
+
+.item5{
+    grid-area: footer;
+    background-color: #134877;
+    margin-bottom: 10px;
+}
+
+
+h1{
+    background-color: #134877;
+    color: white;
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    padding: 10px;
+}
+
+h2{
+    background-color: #134877;
+    opacity: 80%;
+    color: white;
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    padding: 10px;
+}
+
+.item2, .item3, .item4{
+    background-color: #D9D9D9;
+    margin-bottom: 10px;
+}
