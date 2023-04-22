@@ -24,7 +24,7 @@
 
 .item2{
     grid-area: bio;
-    text-align: center;
+    text-align: left;
     height: 500px;
 }
 
