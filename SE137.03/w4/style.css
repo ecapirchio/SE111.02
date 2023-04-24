@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Teko");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Rock Salt");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html{
+    height: 100%;
+
+}
+
+#main{
+    background-color: #282828;
+    width: 1820px;
+    min-height: 1080px;
+    top: -613px;
+    left: -1030px;
+    display: grid;
+    grid-template-areas:"head head head head head"
+                        "banner banner banner banner farr"
+                        "left1 left1 right1 right1 farr"
+                        "foot foot foot foot foot";
+
+}    
+
+header{
+    grid-area: head;
+    background-color: #070707;
+    /*background-image:url(images/twitter.png);
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-size: 2px 2px 2px 2px;
+    background-image:url(images/youtube.png);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-size: 2px 2px 2px 2px;*/
+
+}
+header h1{
+    color:#BB0908;
+    font-family: 'Teko';
+    font-size: 48px;
+    margin: 35px 1312px 15px 30px;
+    font-weight: 400;
+}
+
+#img{
+    grid-area: banner;
+    background-image:url(images/Banner.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 1440px;
+    height: 388px;
+
+}
+
+#leftmod{
+    grid-area: left1;
+    background-color: #393939;
+    border-top: 5px solid #BB0908;
+    width: 700px;
+    height: 481px;
+    top: 512px;
+    left: 20px;
+    margin-left:20px;
+    margin-top:10px;
+}
+
+#leftrule{
+    grid-area: left1;
+    width: 348px;
+    top: 601px;
+    left: 351px;
+    border-top: 4px solid #BB0908;
+    margin: 89px 21px 392px 353px;
+
+}
+
+#anniversary{
+    grid-area: left1;
+    font-family:'Rock Salt';
+    font-style: regular;
+    font-size: 30px;
+    color: #FF1D29;
+    width: 353px;
+    top: 255px;
+    left: 355px;
+    margin:13px 12px 396px 353px;
+}
+
+#leftmodtext{
+    grid-area: left1;
+    font-family:'Poppins';
+    font-style: regular;
+    font-size: 18px;
+    line-height: 27px;
+    width: 349px;
+    height: 216px;
+    top: 594px;
+    left: 351px;
+    align-items: left;
+    color: #FFFFFF;
+    margin: 82px 20px 183px 353px;
+}
+
+#poster{
+    grid-area: left1;
+    background-image: url(images/Poster.png);
+    background-repeat: no-repeat;
+    margin: 15px 388px 2px 22px;
+}
+
+#blueray{
+    grid-area: left1;
+    background-image: url(images/Blueray.png);
+    background-repeat: no-repeat;
+    width: 117px;
+    height: 148px;
+    top: 825px;
+    left: 351px;
+    margin: 313px 252px 20px 353px;
+}
+
+#amazon{
+    grid-area: left1;
+    background-image: url(images/Purchase\ on\ Amazon\ $19.99.png);
+    background-repeat: no-repeat;
+    width: 191px;
+    height: 157px;
+    top: 826px;
+    left: 491px;
+    margin: 314px 38px 10px 493px;
+}
+
+#rightmod{
+    grid-area: right1;
+    background-color: #393939;
+    border-top: 5px solid #BB0908;
+    width: 700px;
+    height: 481px;
+    top: 511px;
+    left: 740px;
+    margin-top:10px;
+}
+
+#pennant{
+    grid-area: right1;
+    background-image: url(images/Pennant.png);
+    background-repeat: no-repeat;
+    margin: 19px 35px 233px 24px;
+}
+#rightmodtext{
+    grid-area: right1;
+    color:#FFFFFF;
+    font-family: 'Poppins';
+    font-size:24px;
+    margin: 267px 0px 19px 24px;
+    line-height: 36px;
+    width: 676px;
+    
+}
+
+
+#farrightmod{
+    grid-area: farr ;
+    background-color: #393939;
+    width: 360px;
+    height: 918px;
+    top: 99px;
+    left: 1460px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#farrightmod p{
+    color:#FFFFFF;
+    font-family: 'roboto';
+    font-size: 18px;
+    margin: 310px 41px 223px 44px;
+    font-weight: 400;
+    width: 275px;
+    top: 409px;
+    left: 1504px;
+    line-height: 21px;
+}
+#farrightmod b{
+    color:#FC0303;
+    font-family: 'Roboto';
+}
+
+#underwater{
+    grid-area: farr;
+    background-image: url(images/Underwater.png);
+    background-repeat: no-repeat;
+    margin: 719px 17px 28.48px 18px;
+}
+
+#sign{
+    grid-area: farr;
+    background-image: url(images/Sign.png);
+    background-repeat: no-repeat;
+    margin: 25px 18px 639px 17px;
+}
+
+footer{
+    grid-area: foot;
+    background-color: #070707;
+    width: 1820px;
+    height: 60px;
+    top: 1017px;
+}
