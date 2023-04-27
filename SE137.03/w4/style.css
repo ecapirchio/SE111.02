@@ -25,22 +25,42 @@ html{
 header{
     grid-area: head;
     background-color: #070707;
-    /*background-image:url(images/twitter.png);
+}
+
+#twitter{
+    grid-area: head;
+    background-image:url(images/twitter.png);
     background-repeat: no-repeat;
-    background-position-x: 75%;
+    background-position-x: 97%;
     background-size: 2px 2px 2px 2px;
+    margin-top: 28px;
+}
+
+#youtube{
+    grid-area: head;
     background-image:url(images/youtube.png);
     background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-size: 2px 2px 2px 2px;*/
-
+    background-position-x: 88%;
+    background-size: 2px 2px 2px 2px;
+    margin-top: 30px;
 }
+
+#snapchat{
+    grid-area: head;
+    background-image:url(images/snapchat.png);
+    background-repeat: no-repeat;
+    background-position-x: 92.5%;
+    background-size: 2px 2px 2px 2px;
+    margin-top: 28px;
+}
+
 header h1{
     color:#BB0908;
     font-family: 'Teko';
     font-size: 48px;
     margin: 35px 1312px 15px 30px;
     font-weight: 400;
+    line-height: 78px;
 }
 
 #img{
@@ -130,6 +150,14 @@ header h1{
     top: 826px;
     left: 491px;
     margin: 314px 38px 10px 493px;
+    /*position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    color: #22C1CB;*/
 }
 
 #rightmod{
@@ -202,10 +230,17 @@ header h1{
     margin: 25px 18px 639px 17px;
 }
 
-footer{
+#footer{
     grid-area: foot;
     background-color: #070707;
     width: 1820px;
     height: 60px;
     top: 1017px;
+    text-indent: 30px;
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    color: #BCBCBC;
 }
