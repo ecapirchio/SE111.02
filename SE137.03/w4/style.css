@@ -17,7 +17,7 @@ html{
     display: grid;
     grid-template-areas:"head head head head head"
                         "banner banner banner banner far"
-                        "left left right right far"
+                        "leftside leftside rightside rightside far1"
                         "foot foot foot foot foot";
 
 }    
@@ -75,7 +75,7 @@ header h1{
 }
 
 #leftmod{
-    grid-area: left1;
+    grid-area: leftside;
     background-color: #393939;
     border-top: 5px solid #BB0908;
     width: 700px;
@@ -87,7 +87,7 @@ header h1{
 }
 
 #leftrule{
-    grid-area: left1;
+    grid-area: leftside;
     width: 348px;
     top: 601px;
     left: 351px;
@@ -97,7 +97,7 @@ header h1{
 }
 
 #anniversary{
-    grid-area: left1;
+    grid-area: leftside;
     font-family:'Rock Salt';
     font-style: regular;
     font-size: 30px;
@@ -109,7 +109,7 @@ header h1{
 }
 
 #leftmodtext{
-    grid-area: left1;
+    grid-area: leftside;
     font-family:'Poppins';
     font-style: regular;
     font-size: 18px;
@@ -124,14 +124,14 @@ header h1{
 }
 
 #poster{
-    grid-area: left1;
+    grid-area: leftside;
     background-image: url(images/Poster.png);
     background-repeat: no-repeat;
     margin: 15px 388px 2px 22px;
 }
 
 #blueray{
-    grid-area: left1;
+    grid-area: leftside;
     background-image: url(images/Blueray.png);
     background-repeat: no-repeat;
     width: 117px;
@@ -142,7 +142,7 @@ header h1{
 }
 
 #amazon{
-    grid-area: left1;
+    grid-area: leftside;
     background-image: url(images/Purchase\ on\ Amazon\ $19.99.png);
     background-repeat: no-repeat;
     width: 191px;
@@ -161,7 +161,7 @@ header h1{
 }
 
 #rightmod{
-    grid-area: right1;
+    grid-area: rightside;
     background-color: #393939;
     border-top: 5px solid #BB0908;
     width: 700px;
@@ -172,13 +172,13 @@ header h1{
 }
 
 #pennant{
-    grid-area: right1;
+    grid-area: rightside;
     background-image: url(images/Pennant.png);
     background-repeat: no-repeat;
     margin: 19px 35px 233px 24px;
 }
 #rightmodtext{
-    grid-area: right1;
+    grid-area: rightside;
     color:#FFFFFF;
     font-family: 'Poppins';
     font-size:24px;
@@ -190,7 +190,7 @@ header h1{
 
 
 #farrightmod{
-    grid-area: farr ;
+    grid-area: far1 ;
     background-color: #393939;
     width: 360px;
     height: 918px;
@@ -217,14 +217,14 @@ header h1{
 }
 
 #underwater{
-    grid-area: farr;
+    grid-area: far1;
     background-image: url(images/Underwater.png);
     background-repeat: no-repeat;
     margin: 719px 17px 28.48px 18px;
 }
 
 #sign{
-    grid-area: farr;
+    grid-area: far1;
     background-image: url(images/Sign.png);
     background-repeat: no-repeat;
     margin: 25px 18px 639px 17px;
