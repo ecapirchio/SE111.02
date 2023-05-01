@@ -16,8 +16,8 @@ html{
     left: -1030px;
     display: grid;
     grid-template-areas:"head head head head head"
-                        "banner banner banner banner farr"
-                        "left1 left1 right1 right1 farr"
+                        "banner banner banner banner far"
+                        "left left right right far"
                         "foot foot foot foot foot";
 
 }    
