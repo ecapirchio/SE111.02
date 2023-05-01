@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Teko");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Rock Salt");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/*#head{
+    background-color: #282828;
+    width: 1820px;
+    min-height: 1080px;
+    top: -613px;
+    left: -1030px;
+}*/
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+      'head head head head head head'
+      'banner banner banner banner rightside'
+      'banner banner banner banner rightside'      
+      'bottomleft bottomleft bottomright bottomright rightside'
+      'bottomleft bottomleft bottomright bottomright rightside'
+      'footer footer footer footer footer';
+}
+
+.background{
+    background-color: #282828;
+    width: 1820px;
+    min-height: 1080px;
+}
+
+.item1{
+    grid-area: head;
+    background-color: #070707;
+    color: #BB0908;
+    font-family: 'Teko';
+    font-size: 48px;
+    //margin: 35px 1312px 15px 30px;
+    font-weight: 400;
+    line-height: 78px;
+    width: 1820px;
+
+    top: -613px;
+    left: -1030px;
+
+}
+
+#icon1{
+    grid-area: head;
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-size: 2px 2px 2px 2px;
+    margin-top: 28px;
+}
+
+#icon2{
+    grid-area: head;
+    background-repeat: no-repeat;
+    background-position-x: 88%;
+    background-size: 2px 2px 2px 2px;
+    margin-top: 30px;
+}
+
+#icon3{
+    grid-area: head;
+    background-repeat: no-repeat;
+    background-position-x: 92.5%;
+    background-size: 2px 2px 2px 2px;
+    margin-top: 28px;
+}
+
+#banner{
+    grid-area: banner;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 1440px;
+    height: 388px;
+
+}
+
+/*h1{
+    color:#BB0908;
+    font-family: 'Teko';
+    font-size: 48px;
+    margin: 35px 1312px 15px 30px;
+    font-weight: 400;
+    line-height: 78px;
+}
+
+banner{
+    grid-area: banner;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 1440px;
+    height: 388px;
+
+}
+
+#left1{
+    grid-area: bottomleft;
+    background-color: #393939;
+    border-top: 5px solid #BB0908;
+    width: 700px;
+    height: 481px;
+    top: 512px;
+    left: 20px;
+    margin-left:20px;
+    margin-top:10px;
+}
+
+#left2{
+    grid-area: bottomleft;
+    width: 348px;
+    top: 601px;
+    left: 351px;
+    border-top: 4px solid #BB0908;
+    margin: 89px 21px 392px 353px;
+
+}
+
+#anniversary{
+    grid-area: bottomleft;
+    font-family:'Rock Salt';
+    font-style: regular;
+    font-size: 30px;
+    color: #FF1D29;
+    width: 353px;
+    top: 255px;
+    left: 355px;
+    margin:13px 12px 396px 353px;
+}
+
+#leftparagraph{
+    grid-area: bottomleft;
+    font-family:'Poppins';
+    font-style: regular;
+    font-size: 18px;
+    line-height: 27px;
+    width: 349px;
+    height: 216px;
+    top: 594px;
+    left: 351px;
+    align-items: left;
+    color: #FFFFFF;
+    margin: 82px 20px 183px 353px;
+}
+
+#poster{
+    grid-area: bottomleft;
+    background-image: url(images/Poster.png);
+    background-repeat: no-repeat;
+    margin: 15px 388px 2px 22px;
+}
+
+#blueray{
+    grid-area: bottomleft;
+    background-image: url(images/Blueray.png);
+    background-repeat: no-repeat;
+    width: 117px;
+    height: 148px;
+    top: 825px;
+    left: 351px;
+    margin: 313px 252px 20px 353px;
+}
+
+#amazon{
+    grid-area: bottomleft;
+    background-image: url(images/Purchase\ on\ Amazon\ $19.99.png);
+    background-repeat: no-repeat;
+    width: 191px;
+    height: 157px;
+    top: 826px;
+    left: 491px;
+    margin: 314px 38px 10px 493px;
+    /*position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    color: #22C1CB;
+}
+
+#rightmod{
+    grid-area: bottomright;
+    background-color: #393939;
+    border-top: 5px solid #BB0908;
+    width: 700px;
+    height: 481px;
+    top: 511px;
+    left: 740px;
+    margin-top:10px;
+}
+
+#pennantpic{
+    grid-area: bottomright;
+    background-image: url(images/Pennant.png);
+    background-repeat: no-repeat;
+    margin: 19px 35px 233px 24px;
+}
+#rightparagraph{
+    grid-area: bottomright;
+    color:#FFFFFF;
+    font-family: 'Poppins';
+    font-size:24px;
+    margin: 267px 0px 19px 24px;
+    line-height: 36px;
+    width: 676px;
+    
+}
+
+
+#farrightmod{
+    grid-area: rightside;
+    background-color: #393939;
+    width: 360px;
+    height: 918px;
+    top: 99px;
+    left: 1460px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#righttext p{
+    color:#FFFFFF;
+    font-family: 'roboto';
+    font-size: 18px;
+    margin: 310px 41px 223px 44px;
+    font-weight: 400;
+    width: 275px;
+    top: 409px;
+    left: 1504px;
+    line-height: 21px;
+}
+#farrightmod b{
+    color:#FC0303;
+    font-family: 'Roboto';
+}
+
+#underwaterpic{
+    grid-area: rightside;
+    background-image: url(images/Underwater.png);
+    background-repeat: no-repeat;
+    margin: 719px 17px 28.48px 18px;
+}
+
+#signpic{
+    grid-area: rightside;
+    background-image: url(images/Sign.png);
+    background-repeat: no-repeat;
+    margin: 25px 18px 639px 17px;
+}*/
+
+footer{
+    grid-area: footer;
+    background-color: #070707;
+    width: 1820px;
+    height: 60px;
+    top: 1017px;
+    text-indent: 30px;
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    color: #BCBCBC;
+}
