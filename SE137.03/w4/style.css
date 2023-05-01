@@ -16,7 +16,7 @@ html{
     left: -1030px;
     display: grid;
     grid-template-areas:"head head head head head"
-                        "banner banner banner banner far"
+                        "banner banner banner banner far1"
                         "leftside leftside rightside rightside far1"
                         "foot foot foot foot foot";
 
