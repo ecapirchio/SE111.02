@@ -4,14 +4,6 @@
 @import url("https://fonts.googleapis.com/css?family=Rock Salt");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
-/*#head{
-    background-color: #282828;
-    width: 1820px;
-    min-height: 1080px;
-    top: -613px;
-    left: -1030px;
-}*/
-
 .grid-container{
     display: grid;
     grid-template-areas:
