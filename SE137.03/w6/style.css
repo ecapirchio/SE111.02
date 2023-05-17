@@ -8,6 +8,9 @@ html, body{
     margin:0;
 }
 
+nav{
+    background-color: white;
+}
 
 main{
     height:100%;
@@ -16,7 +19,7 @@ main{
 }
 header{
     padding:10px;
-    background-color: crimson;
+    background-color: #505050;
 }
 section{
     display:flex;
@@ -25,12 +28,12 @@ section{
 
 aside{
     width:50px;
-    background-color:cornflowerblue;
+    background-color: #505050;
   
 }
 footer{
     padding:10px;
-    background-color: crimson;
+    background-color: #0254A0;
 }
 #editor{
     width:100%;
@@ -41,7 +44,7 @@ nav a{
     display:flex;
     width:100px;
     height:25px;
-    background-color:cyan;
+    background-color: #373737;
     float:left;
 }
 textarea{
@@ -56,14 +59,19 @@ textarea{
     
 }
 p{
-    background-color:#666;
+    background-color:#161616;
     margin:0;
+    color: blue;
 }
 
- #inner-tray{
+#inner-tray{
     width:200px;
-    background-color:rgb(251, 255, 0);
+    background-color: #373737;
 }
+/*#inner-tray-icons{
+    display:flex;
+    position:;
+}*/
 
 .tray{
     
@@ -77,4 +85,7 @@ p{
 .closed{
     width:0px;
     transition:all .5s;
+}
+a:active{
+    background-color: white;
 }
