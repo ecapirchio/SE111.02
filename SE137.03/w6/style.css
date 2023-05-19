@@ -67,6 +67,7 @@ p{
 #inner-tray{
     width:200px;
     background-color: #373737;
+    color: white;
 }
 /*#inner-tray-icons{
     display:flex;
