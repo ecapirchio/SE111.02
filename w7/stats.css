@@ -14,3 +14,21 @@ table{
  td{
     border-bottom:1px solid black;
 }
+@media (max-width:1920px) 
+{
+    html{
+        font-size:32px;
+    }
+    body{
+         background-color:red;
+         transition: all 1s;
+         font-size: 100ems;
+
+    }
+    main{
+        width:100%;
+    }
+    h1{
+        font-size: 150ems;
+    }
+}
