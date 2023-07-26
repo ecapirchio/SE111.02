@@ -2,14 +2,14 @@ class Box
 {
     constructor()
     {
-        this.x = c.width/2;
-        this.y = c.height/2;
-        this.w = 100;
-        this.h = 100;
-        this.left = this.x - this.w/2
+        this.x = c.width/2
+        this.y = c.height/2
+        this.w = 100
+        this.h = 100
         this.color = `blue`
         this.vx = 0
         this.vy = 0
+        this.force = 1;
     }
 
     draw()
@@ -17,7 +17,7 @@ class Box
         ctx.save()
             ctx.translate(this.x, this.y)
             ctx.fillStyle = this.color
-            ctx.fillRect(0-this.w/2, 0-this.y/2, this.w, this.h)
+            ctx.fillRect(0-this.w/2, 0-this.h/2, this.w, this.h)
         ctx.restore()
     }
 
@@ -39,10 +39,11 @@ class Box
             this.left() < obj.right() &&
             this.bottom() > obj.top() &&
             this.top() < obj.bottom()
-            )
-            {
-                return true
-            }
-            return false
+        )
+        {
+            return true
+        }
+        return false
     }
+
 }
