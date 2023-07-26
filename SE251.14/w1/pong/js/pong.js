@@ -17,7 +17,7 @@ p1.x = 0 + p1.w/2
 var p2 = new Box();
 p2.w = 20
 p2.h = 150
-p1.x = 0 + p2.w/2
+p2.x = 780 + p2.w/2
 
 //ball setup
 var ball = new Box();
@@ -51,12 +51,12 @@ function main()
     ball.move()
 
     //p2 accelerates when key is pressed 
-    if(keys[`i`])
+    if(keys[`ArrowUp`])
     {
        p2.vy += -p2.force
     }
 
-    if(keys[`k`])
+    if(keys[`ArrowDown`])
     {
         p2.vy += p2.force
     }
@@ -92,7 +92,7 @@ function main()
     if(ball.x < 0)
     {
         ball.x = c.width/2
-        ball.y  =c.height/2
+        ball.y = c.height/2
     }
     if(ball.x > c.width)
     {
@@ -121,7 +121,7 @@ function main()
     //p2 with ball collision
     if(ball.collide(p2))
     {
-        ball.x = p2.x + p2.w/2 + ball.w/2
+        ball.x = p2.x - p2.w/2 - ball.w/2
         ball.vx = -ball.vx;
     }
 
