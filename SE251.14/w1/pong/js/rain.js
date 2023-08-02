@@ -5,40 +5,32 @@ var ctx = c.getContext(`2d`)
 //timer to make the game run at 60fps
 var timer = setInterval(main, 1000/60)
 
-//global friction variable
-var fy = .97
+var p = []
+var amt = 50
 
-//p1 setup
-var p1 = new Box();
-p1.w = 20
-p1.h = 150
-p1.x = 0 + p1.w/2
+for(let i=0; i<amt; i++)
+{
+    p[i]=new Box();
+    p[i].x = Math.random()*c.width;
+    p[i].y = Math.random()*c.height;
+    p[i].w = rand(10, 20)
+    p[i].h = p[i].w
+}
 
-var p2 = new Box();
-p2.w = 20
-p2.h = 150
-p2.x = 780 + p2.w/2
-
-//ball setup
-var ball = new Box();
-ball.w = 20
-ball.h = 20
-ball.vx = -2
-ball.vy = -2
-ball.color = `black`
-
-//score setup
-var score = new Box();
-score.w = 15
-score.h = 15
-score.vx = 0
-score.vy = 0
-score.color = `blue`
+function rand(l, h)
+{
+    return Math.random() * (h-l) + 1
+}
 
 function main()
 {
     //erases the canvas
     ctx.clearRect(0,0,c.width,c.height)
+
+    for(let i=0; i<amt; i++)
+    {
+        p[i].draw()
+    }
     
     //p1 accelerates when key is pressed 
     if(keys[`w`])
@@ -137,5 +129,4 @@ function main()
     p1.draw()
     p2.draw()
     ball.draw()
-    score.draw()
 }
