@@ -13,7 +13,7 @@ var player = [new Player(), new Player()]
 player[0].pad = new Box();
 player[1].pad = new Box();
 
-var pad = [player[0], pad, player[1], pad]
+var pad = [player[0].pad, player[1].pad]
 
 console.log(player)
 
