@@ -30,9 +30,16 @@ for(let i = 0; i < fill.length; i++)
     fill[i].addEventListener(`input`, colorfill)
     function colorfill(e)
     {
-        
+        console.dir(e.target.value)
+        player[i][word] = e.target.value
+        player[i].pad[word] = e.target.value
+        e.target.nextElementSibling.innerHTML = player[i][word]
+        console.log(fill[i])
     }
 }
+
+var stroke = document.querySelectorAll(`.stroke`)
+for(let i = 0; i < stroke.length; i++)
 
 
 /*---------
