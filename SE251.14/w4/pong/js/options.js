@@ -4,7 +4,7 @@
     . show or hide the `.sides` div
 ---------*/
 
-var Options = document.querySelector("#options h2")
+var options = document.querySelector("#options h2")
 options[0].addEventListener(`click`, showhide)
 
 function showhide()
