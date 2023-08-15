@@ -4,7 +4,7 @@
     . show or hide the `.sides` div
 ---------*/
 
-var options = document.querySelector("#options h2")
+var options = document.querySelectorAll("#options h2")
 options[0].addEventListener(`click`, showhide)
 
 function showhide()
@@ -22,7 +22,7 @@ function showhide()
         . Show the fill's hex code in the output div 
 
 -----------*/
-var fill = document.querySelector(`.fill`)
+var fill = document.querySelectorAll(`.fill`)
 for(let i = 0; i < fill.length; i++)
 {
     fill[i].value = player[i][fill[i].classList[0]]
@@ -31,9 +31,9 @@ for(let i = 0; i < fill.length; i++)
     function colorfill(e)
     {
         console.dir(e.target.value)
-        player[i][word] = e.target.value
-        player[i].pad[word] = e.target.value
-        e.target.nextElementSibling.innerHTML = player[i][word]
+        player[i].fill = e.target.value
+        player[i].pad.fill = e.target.value
+        e.target.nextElementSibling.innerHTML = player[i].fill
         console.log(fill[i])
     }
 }
@@ -41,8 +41,8 @@ for(let i = 0; i < fill.length; i++)
 var stroke = document.querySelectorAll(`.stroke`)
 for(let i = 0; i < stroke.length; i++)
 {
-    stroke[i].value = player[i].stroke
-    stroke[i].nextElementSibling.innerHTML = player[i].stroke
+    stroke[i].value = player[i][stroke[i].classList[0]]
+    stroke[i].nextElementSibling.innerHTML = player[i][stroke[i].classList[0]]
     stroke[i].addEventListener(`input`, colorfill)
     function colorfill(e)
     {
