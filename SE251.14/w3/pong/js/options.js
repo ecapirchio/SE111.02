@@ -22,7 +22,17 @@ function showhide()
         . Show the fill's hex code in the output div 
 
 -----------*/
-
+var fill = document.querySelector(`.fill`)
+for(let i = 0; i < fill.length; i++)
+{
+    fill[i].value = player[i][fill[i].classList[0]]
+    fill[i].nextElementSibling.innerHTML = player[i][fill[i].classList[0]]
+    fill[i].addEventListener(`input`, colorfill)
+    function colorfill(e)
+    {
+        
+    }
+}
 
 
 /*---------
