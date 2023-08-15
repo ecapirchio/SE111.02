@@ -4,17 +4,14 @@
     . show or hide the `.sides` div
 ---------*/
 
-const Options = document.querySelector("#options");
-const Sides = document.querySelector(".sides");
+var Options = document.querySelector("#options h2")
+options[0].addEventListener(`click`, showhide)
 
-Options.addEventListener("click", function(){
-    if (Sides.style.display == "none") {
-        Sides.style.display = "block";
-    }
-    else{
-        Sides.style.display = "none";
-    }
-});
+function showhide()
+{
+    var sides = document.querySelector(`.sides`)
+    sides.classList.toggle(`hidden`)
+}
 
 /*---------
     Program the two fill inputs to do the following:
@@ -26,9 +23,7 @@ Options.addEventListener("click", function(){
 
 -----------*/
 
-document.addEventListener("DOMContentLoaded", function() {
-    const p1Color = document.getElementById
-})
+
 
 /*---------
     Program the six key inputs to do the following:
