@@ -37,23 +37,9 @@
         <section class="blank"></section>
     </main>
     <script src="js/User.js"></script>
+    <script src="js/loadPlayer.js"></script>
     <script>
-        var urlParams = new URLSearchParams(window.location.search);
-        console.log(urlParams.get(`load`))
-
-        var p1;
-        if(urlParams.get(`load`)==="true")
-        {
-            p1 = new User().setProps(JSON.parse(localStorage.getItem(`p1`)))
-            console.log(p1)
-        }
-        else
-        {
-            p1 = new User();
-        }
-
         const fields = document.querySelectorAll(`input`);
-
         for(let i=0; i<fields.length; i++)
         {
             var keysProp = p1.keys[fields[i].classList[0]]
