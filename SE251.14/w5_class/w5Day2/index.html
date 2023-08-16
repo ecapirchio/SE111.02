@@ -45,8 +45,8 @@
 
         const startOptions = document.createElement(`div`);
         startOptions.setAttribute(`id`, `start-options`);
-        startOptions.style.backgroundColor = `#00ffff`;
-        startMenu.style.opacity =`0`;
+        startOptions.style.backgroundColor=`#00ffff`;
+        startOptions.style.opacity =`0`;
 
         const continueButton = document.createElement(`button`);
         continueButton.appendChild(document.createTextNode(`Continue`))
@@ -54,7 +54,7 @@
         startOptions.appendChild(continueButton)
 
         continueButton.addEventListener(`click`, (e)=>{
-            window.location = `lobby.html?load=${e.target.dataset.load}`
+            window.location = `lobby.html?load=${e.target.dataset.load}&hair=blue&shirt=#fffff`
         })
 
         var timer = setTimeout(loadStartMenu, 1000);
@@ -71,9 +71,9 @@
             $(`#start`).animate({opacity: 0}, 500, function(){
                 menus.removeChild(startMenu);
                 menus.appendChild(startOptions);
-                $(`#start-options`).animate({opacity:1}), 500);
+                $(`#start-options`).animate({opacity: 1}, 500)
             });
-        }
+        })
 
     </script>
 </body>
