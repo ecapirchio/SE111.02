@@ -35,21 +35,14 @@
             {name:`bbb`, score:980}
         ]
         
-        var menus = document.querySelector(`#menus`);
-
+        var message = "";
+        for (let i = 0; i<highScoreList.length; i++)
+        {
+            message += "First Name: " + highScoreList[i].name + " Score: " + highScoreList[i].score
+        }
+        document.querySelector(`#high-scores`).innerHTML = message
+        var hs = document.querySelector(`#high-scores`)  
         
-       
-
-     
-
-
-
-      
-        
-
-
-        
-
     </script>
 </body>
 </html>

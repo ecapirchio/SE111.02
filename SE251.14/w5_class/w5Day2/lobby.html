@@ -39,9 +39,34 @@
     <script src="js/User.js"></script>
     <script src="js/loadPlayer.js"></script>
     <script>
+        var urlParams = new URLSearchParams(window.location.search);
+
+        var p1;
+        if (urlParams.get(`load`)=== `true`)
+        {
+            p1 = new User().setProps(JSON.parse(localStorage.getItem(`p1`)))
+        }
+        else
+        {
+            p1 = new User();
+        }
+
         const fields = document.querySelectorAll(`input`);
         for(let i=0; i<fields.length; i++)
         {
+            fields[i].value = (p1[fields[i].classList[0]]==undefined)?
+            p1.keys[fields[i].classList[0]]:
+            p1[fields[i].classList[0]];
+
+            fields[i].nextElementSibling = (p1[fields[i].classList[0]]==undefined)?
+            p1.keys[fields[i].classList[0]]:
+            p1[fields[i].classList[0]];
+        }
+
+        let params = (new URL(document.location)).searchParams;
+        let name = params.get("load");
+        alert(name);
+        /*{
             var keysProp = p1.keys[fields[i].classList[0]]
             var normalProp = p1[fields[i].classList[0]]
             
@@ -52,6 +77,11 @@
                 fields[i].addEventListener(`keyup`)
             }
         }
+
+        var play = document.querySelector(`#menus a`)
+        play.addEventListener(`click`, (e)=>{
+            localStorage.setItem(`p1`, JSON.stringify(player[0]))
+        })*/
 
     </script>
 </body>
