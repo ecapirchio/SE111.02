@@ -19,7 +19,10 @@
             <h2>HIGH SCORES</h2>
             <!-- This is what your final html will look like
                 <div id="high-scores">
-                    //scores go here.
+                   <div class="row">
+                        <div>aaa</div><div>1000</div>
+                        <div>bbb</div><div>980</div>
+                   </div>
                 </div>
             -->
             </div>
@@ -32,22 +35,14 @@
             {name:`bbb`, score:980}
         ]
         
-        //
-        var menus = document.querySelector(`#menus`);
-
+        var message = "";
+        for (let i = 0; i<highScoreList.length; i++)
+        {
+            message += "First Name: " + highScoreList[i].name + " Score: " + highScoreList[i].score
+        }
+        document.querySelector(`#high-scores`).innerHTML = message
+        var hs = document.querySelector(`#high-scores`)  
         
-       
-
-     
-
-
-
-      
-        
-
-
-        
-
     </script>
 </body>
 </html>
