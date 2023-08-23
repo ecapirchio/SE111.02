@@ -57,6 +57,27 @@
             window.location = `lobby.html?load=${e.target.dataset.load}&hair=blue&shirt=#fffff`
         })
 
+        const newButton = document.createElement(`button`);
+        newButton.appendChild(document.createTextNode(`New`))
+        newButton.setAttribute(`data-load`,`true`)
+        startOptions.appendChild(newButton)
+
+        newButton.addEventListener(`click`, (e)=>{
+            window.location = `lobby.html?load=${e.target.dataset.load}`
+        })
+
+        const hsButton = document.createElement(`button`);
+        hsButton.appendChild(document.createTextNode(`High Scores`))
+        hsButton.setAttribute(`data-load`, `true`)
+        startOptions.appendChild(hsButton)
+
+        const highScores = document.createElement(`div`);
+        highScores.setAttribute(`id`, `high-scores`);
+
+        hsButton.addEventListener(`click`, (e)=>{
+            window.location=`hs.html?load=${e.target.dataset.load}`
+        })
+
         var timer = setTimeout(loadStartMenu, 1000);
         function loadStartMenu(){
             $(`#load`).animate({opacity: 0}, 2000, function() {
