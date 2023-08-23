@@ -14,6 +14,10 @@ var sides = {
     };
 var timer, ball, currentState;
 var scoreBoard;
+var player = [
+    new User().setProps({h:150,  force:1, fill:`#ffff00`}),
+    new User().setProps({h:150,  force:1, fill:`#ffff00`, keys:{u:`ArrowUp`, d:`ArrowDown`, s:`ArrowLeft`}})
+]
 
 
 init();
