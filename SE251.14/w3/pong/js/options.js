@@ -21,6 +21,22 @@ function showhide()
         . Show the fill's hex code in the output div 
 
 -----------*/
+/*var background = document.querySelectorAll(`.background`)
+for(let i = 0; i<background.length; i++)
+{
+    background[i].value = player[i][background[i].classList[0]]
+    background[i].nextElementSibling.innerHTML = player[i][background[i].classList[0]]
+    ground[i].addEventListener(`input`, colorfill)
+    function colorfill(e)
+    {
+        var word = e.target.classList[0]
+        console.dir(e.target.value)
+        player[i][word] = e.target.value
+        player[i].pad[word] = e.target.value
+        e.target.nextElementSibling.innerHTML = player[i][word]
+        console.log(background[i])
+    }
+}*/
 var fill = document.querySelectorAll(`.fill`)
 for(let i = 0; i<fill.length; i++)
 {
