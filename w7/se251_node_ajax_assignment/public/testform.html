@@ -22,7 +22,7 @@
 
 
     async function load(e){
-        var promise = await fetch("http://localhost:80/jeep");
+        var promise = await fetch("http://localhost:3000/jeep");
         var data = await promise.json(data)
        // let sortedData = data.sort((a, b) => (b.year - a.year));
         //console.log(sortedData)
@@ -43,10 +43,32 @@
 
         output.innerHTML = message
 
-        //query select all the buttons
+        var erase = document.querySelectorAll(`.Delete`)
         //add event listeners to each button
+        for( let i = 0; i < erase.length, i++;)
+        {
+            erase[i].addEventListener(`click`, async(e) =>
+            {
+                var erasecar = i
+
+                console.log(erasecar)
+                await fetch(`http://localhost:3000/delete`, {
+                    method: "POST",
+
+                    // Adding headers to the request
+                    headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+            }
+                })
+
+                load()
+            })
+
+        };
             //send the index number of the button you selected to the `delete` route
+
             //the object you send could look like this {index:/*correct index number goes here*/}
+
             //call the load function to update the page
 
     }
@@ -54,7 +76,7 @@
 
     document.querySelector(`button`).addEventListener(`click`, async (e)=>{
 
-       await fetch("http://localhost:80/jeep", {
+       await fetch("http://localhost:3000/jeep", {
     
             // Adding method type
             method: "POST",
