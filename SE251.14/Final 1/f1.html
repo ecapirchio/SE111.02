@@ -18,7 +18,7 @@
     <form>
         <label for="name">What is your name?</label>
         <input type="text" name="name" placeholder="type your name">
-        <button id="submit">Submit</button>
+        <input type="button" id="submit" value="submit" onclick="" />
     </form>
     <div class="output">
         Bop
@@ -37,12 +37,30 @@
                 add text to the output that says:
                 "Hello, <the typed name>. Welcome to your final exam!"
         */
+        var first = document.querySelector(`#name`)
+        console.log(first)
+
+        var p = document.querySelectorAll(`p`)
+
         button.addEventListener(`click`, check)
 
         function check(){
+            e.preventDefault()
             let pName = /^[A-Za-z][A-Z\-a-z]{1,}$/
         }
+        for (let i=0; i<span.length; i++){
+            span[i].innerHTML = ""
+        }
+        for (let i=0; i<p.length; i++){
+            p[i].style.color = "black"
+        }
 
+        console.log()
+
+        var textToOutput = "Hello, " + name + ". Welcome to your final exam!"
+        console.log(textToOutput)
+
+        
     </script>
 </body>
 </html>
