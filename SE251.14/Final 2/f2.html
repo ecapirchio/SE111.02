@@ -27,9 +27,9 @@
 </head>
 <body>
     <form>
-        <label for="city">What is your zip?</label>
+        <label for="city">What is your City?</label>
         <input type="text" name="city" id="city" disabled>
-        <label for="state">Country</label>
+        <label for="state">State</label>
         <input type="text" name="state" id="state" disabled>
         <label for="zip">What is your zip?</label>
         <input type="number" name="zip" id="zip" placeholder="02711" maxlenght="5">
@@ -56,6 +56,40 @@
 
                 finally, populate the city and state text boxes with the city and state that are in the new array
         */
+
+        var list = document.querySelectorAll(`#input`)
+
+        erase[i].addEventListener(`click`, async(e) =>
+        {
+                var erasecar = i
+
+                console.log(erasecar)
+                await fetch(`https://geocode.maps.co/search?q=02724+US`, {
+                    method: "POST",
+
+                    // Adding headers to the request
+                    headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            })
+
+            load()
+        })
+
+    newData.splice(change, 1)
+    console.log(newData)
+    const jsonString = JSON.stringify(newData);
+    console.log(jsonString)
+    fs.writeFile('./data/jeep.json', jsonString, err => {
+    if (err) {
+        console.log('Error')
+    }
+    else{
+        console.log('Success')
+    }
+    });
+
+
     </script>
 </body>
 </html>
