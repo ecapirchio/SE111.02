@@ -11,8 +11,8 @@
 </head>
 <body>
     <main>
-        <div><input type="number" value="5">+<input type="number" value="5">=<input type="number" disabled></div>
-        <input type="button" value="Add The Numbers">
+        <div><input class="numA" id="numA" type="number" value="5">+<input class="numB" id="numB" type="number" value="5">=<input class="sum" id="sum" type="number" disabled></div>
+        <input class="button" id="button" type="button" value="Add The Numbers">
     </main>
     <script>
        /*
@@ -29,6 +29,25 @@
                     Example: Number(some string goes here);
                 *display the returned value in the last input.
        */
+
+        function add(){
+            numA = document.querySelectorAll(`#numA`)
+            numB = document.querySelectorAll(`#numB`)
+            sum = Number(numA.value) + Number(numB.value)
+            return sum
+        }
+
+        
+
+        button = document.querySelector(`#button`)
+        button.addEventListener(`click`, addition)
+        
+        function addition(){
+            add()
+            document.querySelector(`#sum`).value = Number(sum)
+            console.log(sum)
+        }
+
     </script>
     <script>
 
