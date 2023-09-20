@@ -22,7 +22,7 @@
 
 
     async function load(e){
-        var promise = await fetch("http://localhost:3000/jeep");
+        var promise = await fetch("http://localhost:2100/jeep");
         var data = await promise.json(data)
         let sortedData = data.sort((a, b) => (b.year - a.year));
         console.log(sortedData)
@@ -53,7 +53,7 @@
                 var erasecar = i
 
                 console.log(erasecar)
-                await fetch(`http://localhost:3000/delete`, {
+                await fetch(`http://localhost:2100/delete`, {
                     method: "POST",
 
                     // Adding headers to the request
@@ -77,7 +77,7 @@
 
     document.querySelector(`button`).addEventListener(`click`, async (e)=>{
 
-       await fetch("http://localhost:3000/jeep", {
+       await fetch("http://localhost:2100/jeep", {
     
             // Adding method type
             method: "POST",
