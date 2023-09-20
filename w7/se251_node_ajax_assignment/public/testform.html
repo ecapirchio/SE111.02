@@ -24,8 +24,8 @@
     async function load(e){
         var promise = await fetch("http://localhost:3000/jeep");
         var data = await promise.json(data)
-       // let sortedData = data.sort((a, b) => (b.year - a.year));
-        //console.log(sortedData)
+        let sortedData = data.sort((a, b) => (b.year - a.year));
+        console.log(sortedData)
 
         var output = document.querySelector(`#output`);
         var message =``
@@ -38,6 +38,7 @@
                 }
 
             //add a button
+            
             message += `</div>`
         }
 
