@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
 
 body{
     background-color: lightgray;
@@ -24,7 +25,7 @@ div{
     box-shadow: 0 0 25px black;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Alumni Sans Collegiate One';
     font-size: 15px;
 }
 
