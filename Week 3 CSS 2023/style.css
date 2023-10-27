@@ -1,0 +1,275 @@
+/* Add this to your style.css file
+.box {
+    width: 665px;
+    height: 55px;
+    background-color: #134877;
+    grid-area: box;
+}*/
+
+.frame-4{
+    width: 665px;
+    height: 735px;
+    background: #FFF;
+}
+
+.rectangle-1{
+    width: 665px;
+    height: 55px;
+    flex-shrink: 0;
+    background: #134877;
+}
+
+.rectangle-2{
+    width: 665px;
+    height: 576px;
+    flex-shrink: 0;
+    
+    background: #134877;
+}
+
+.rectangle-3{
+    width: 665px;
+    height: 33px;
+    flex-shrink: 0;
+
+    background: #134877;
+}
+
+.rectangle-4{
+    width: 441px;
+    height: 200px;
+    flex-shrink: 0;
+    
+    background: #D9D9D9;
+}
+
+.rectangle-5{
+    width: 197px;
+    height: 200px;
+    flex-shrink: 0;
+    
+    background: #D9D9D9;
+}
+
+.rectangle-6{
+    width: 636px;
+    height: 237px;
+    flex-shrink: 0;
+    
+    background: rgba(19, 72, 119, 0.80);
+}
+
+.rectangle-7{
+    width: 651px;
+    height: 279px;
+    flex-shrink: 0;
+    
+    background: #D9D9D9;
+}
+
+.rectangle-8{
+    width: 636px;
+    height: 22px;
+    flex-shrink: 0;
+    
+    background: rgba(19, 72, 119, 0.80);
+}
+
+.rectangle-9{
+    width: 187px;
+    height: 25px;
+    flex-shrink: 0;
+    
+    background: rgba(19, 72, 119, 0.80);
+}
+
+.rectangle-10{
+    width: 187px;
+    height: 25px;
+    flex-shrink: 0;
+    
+    fill: rgba(19, 72, 119, 0.80);
+
+}
+
+.friends-and-family-collage-1{
+    width: 223px;
+    height: 223px;
+    flex-shrink: 0;
+}
+
+
+.emma-capirchio{
+    display: flex;
+    width: 150px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Julius Sans One;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.emma-capirchio2{
+    display: flex;
+    width: 165px;
+    height: 33px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Fira Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.new-england-institute-of-technology-rhode-island-school-of-design-cranston-high-school-west {
+    width: 178px;
+    height: 137px;
+    flex-shrink: 0;
+    
+    color: #000;
+    font-family: Fira Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bio{
+    display: flex;
+    width: 37px;
+    height: 22px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Julius Sans One;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.schooling{
+    display: flex;
+    width: 99px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Julius Sans One;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.image-1{
+    width: 441px;
+    height: 200px;
+    flex-shrink: 0;
+    
+    background: url(<path-to-image>), lightgray -9.704px -0.175px / 103.104% 127.675% no-repeat;
+}
+
+.hi-my-name-is-emma-capirchio-i-love-baseball-basketball-and-football-i-spend-my-sundays-during-football-season-watching-the-atlanta-falcons-and-my-late-nights-during-baseball-season-watching-the-la-dodgers-since-i-was-little-i-have-always-been-a-huge-spiderman-fan-i-live-with-my-parents-middle-and-my-brothers-bottom-right-but-being-in-a-very-italian-family-see-extended-family-just-as-much-top-left-a-big-thing-in-my-immediate-family-is-traveling-since-turning-7-i-have-been-out-of-the-country-a-number-of-times-weve-vacationed-in-places-such-as-italy-mexico-dominican-republic-and-turks-and-caicos-when-im-not-watching-sports-or-traveling-im-with-my-work-friend-left-middle-my-best-friend-top-right-and-bottom-left-or-my-girlfriend-right-middle-and-bottom-middle-i-was-also-the-first-female-eagle-scout-in-my-troop{
+    width: 393px;
+    height: 230px;
+    flex-shrink: 0;
+    
+    color: #FFF;
+    font-family: Fira Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hobbies{
+    display: flex;
+    width: 75px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Julius Sans One;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.watching-football-and-baseball-coding-playing-video-games{
+    width: 178px;
+    height: 137px;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: Fira Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*.box::before {
+    content: "Emma Capirchio"; /* Add the content you want from the h1 tag
+    position: absolute;
+    top: 50%; /* Adjust the position as needed
+    left: 50%; /* Adjust the position as needed
+    transform: translate(-50%, -50%); /* Center the content
+    font-size: 20px; /* Adjust the font size
+    color: #fff; /* Adjust the text color
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'head head head head head head'
+      'bio bio bio bio bio bio'
+      'bio bio bio bio bio bio'
+      'hobbies hobbies hobbies schooling schooling schooling'
+      'hobbies hobbies hobbies schooling schooling schooling'
+      'footer footer footer footer footer footer';
+}
+
+#head {
+    grid-area: head;
+    
+}
+
+#bio {
+    grid-area: bio;
+    flex-shrink: 0;
+    margin-top: 55px; /* To push the content below the box
+}
+
+#ed {
+    grid-area: schooling;
+}
+
+#hobbies {
+    grid-area: hobbies;
+}
+
+#footer {
+    grid-area: footer;
+}*/
