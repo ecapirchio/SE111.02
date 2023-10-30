@@ -6,17 +6,6 @@
     grid-area: box;
 }*/
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-      'head head head head head head'
-      'bio bio bio bio bio bio'
-      'bio bio bio bio bio bio'
-      'hobbies hobbies hobbies schooling schooling schooling'
-      'hobbies hobbies hobbies schooling schooling schooling'
-      'footer footer footer footer footer footer';
-  }
-
 .frame-4{
     width: 665px;
     height: 735px;

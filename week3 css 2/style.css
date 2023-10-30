@@ -1,0 +1,193 @@
+.frame-child,
+.frame-inner,
+.frame-item {
+  position: absolute;
+  top: 674px;
+  left: 0;
+  background-color: #134877;
+  width: 665px;
+  height: 33px;
+}
+.frame-inner,
+.frame-item {
+  top: 21px;
+  height: 55px;
+}
+.frame-inner {
+  top: 87px;
+  height: 576px;
+}
+.emma-capirchio {
+  position: absolute;
+  top: 674px;
+  left: 250px;
+  font-size: 12px;
+  font-family: Julius Sans One;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 33px;
+}
+.frame-child1,
+.rectangle-div {
+  position: absolute;
+  top: 420px;
+  left: 5px;
+  background-color: #D9D9D9;
+  width: 441px;
+  height: 200px;
+}
+.frame-child1 {
+  left: 460px;
+  width: 197px;
+}
+.new-england-institute {
+  margin-bottom: 0;
+}
+.schoolingBullets {
+  margin: 0;
+  padding-left: var(--padding-base);
+}
+.blank-line {
+  margin: 0;
+}
+.new-england-institute-container {
+  position: absolute;
+  top: 458px;
+  left: 465px;
+  font-size: var(--font-inherit);
+  font-family: var(--font-inherit);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 178px;
+  height: 137px;
+}
+.frame-child2,
+.frame-child3 {
+  position: absolute;
+  top: 129px;
+  left: 6px;
+  background-color: var(--color-gainsboro);
+  width: 651px;
+  height: 279px;
+}
+.frame-child3 {
+  top: 164px;
+  left: 12px;
+  background-color: var(--color-steelblue-200);
+  width: 636px;
+  height: 237px;
+}
+.bio,
+.frame-child4 {
+  position: absolute;
+  top: 133px;
+  left: 12px;
+  height: 22px;
+}
+.frame-child4 {
+  background-color: var(--color-steelblue-200);
+  width: 636px;
+}
+.bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+}
+.emma-capirchio1,
+.rectangle-icon,
+.schooling {
+  position: absolute;
+  top: 424px;
+  left: 465px;
+  width: 187px;
+  height: 25px;
+}
+.emma-capirchio1,
+.schooling {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99px;
+}
+.emma-capirchio1 {
+  top: 32px;
+  left: 0;
+  width: 150px;
+  height: 30px;
+}
+.image-1-icon {
+  position: absolute;
+  top: 420px;
+  left: 5px;
+  width: 441px;
+  height: 200px;
+  object-fit: cover;
+}
+.baseball {
+  text-decoration: underline;
+}
+.bioP2 {
+  font-family: var(--font-fira-sans);
+}
+.bioP1-container {
+  position: absolute;
+  top: 167px;
+  left: 15px;
+  font-size: 13px;
+  text-align: left;
+  display: inline-block;
+  width: 393px;
+  height: 230px;
+}
+.friends-and-family-collage-1 {
+  position: absolute;
+  top: 171px;
+  left: 418px;
+  width: 223px;
+  height: 223px;
+  object-fit: cover;
+}
+.frame-child5,
+.hobbies {
+  position: absolute;
+  top: 424px;
+  left: 10px;
+  height: 25px;
+}
+.frame-child5 {
+  background-color: var(--color-steelblue-200);
+  width: 187px;
+}
+.hobbies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+}
+.watching-football-and-container {
+  position: absolute;
+  top: 458px;
+  left: 15px;
+  font-size: var(--font-inherit);
+  font-family: var(--font-inherit);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 178px;
+  height: 137px;
+}
+.rectangle-parent {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 735px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-white);
+  font-family: var(--font-julius-sans-one);
+}

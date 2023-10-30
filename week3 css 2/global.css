@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-fira-sans: "Fira Sans";
+    --font-inherit: inherit;
+    --font-julius-sans-one: "Julius Sans One";
+  
+    /* font sizes */
+    --font-size-xs: 12px;
+    --font-size-mini: 15px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-steelblue-100: #134877;
+    --color-steelblue-200: rgba(19, 72, 119, 0.8);
+    --color-gainsboro: #d9d9d9;
+  
+    /* Paddings */
+    --padding-base: 16px;
+  }  
