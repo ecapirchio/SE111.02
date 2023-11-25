@@ -1,61 +1,77 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Week 6</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <main>
-            <header></header>
-            <section>
-                <aside>
-                    <a href="#" id="toggle">
-                        <img src="images/tray icon.png">
-                    </a>
-                </aside>
-                <div class="tray">
-                    <div id="inner-tray">
-                        <ul><img src="images/file icon.png">File 1</ul>
-                        <ul><img src="images/file icon.png">File 1</ul>
-                        <ul><img src="images/file icon.png">File 1</ul>
-                        <ul><img src="images/file icon.png">File 1</ul>
-                        
-                    </div>
-                    <!--
-                    <div id="inner-tray-icons">
-                        <ul>
-                            <img src="images/file icon.png">
-                            <img src="images/file icon.png">
-                            <img src="images/file icon.png">
-                            <img src="images/file icon.png">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Assignment</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div id="item1">
+                <a href="#" class="item1">File</a>
+                <a href="#" class="item1">Edit</a>
+                <a href="#" class="item1">Help</a>
+            </div>
+            <h1>Week 6 Assignment</h1>
+
+            <a href="#" class="settings"></a>
+
+        </header>
+        <section>
+            <aside>
+                <a href="#" id="toggle" class="trayIcon"></a>
+                <a href="#" id="toggle" class="appIcon"></a>
+
+                <a href="#" id="toggle" class="trash"></a>
+
+            </aside>
+            <div class="tray">
+                <div id="inner-tray">
+                    <li class="mainFile">Files</li>
+                    <hr>
+                    <div id="files">
+                        <ul id="files">
+                            <li>File 1</li>
+                            <li>File 1</li>
+                            <li>File 1</li>
+                            <li>File 1</li>
                         </ul>
                     </div>
-                    -->
-                    
+                    <hr>
+                    <li class="os">OtherStuff</li>
+                    <hr>
+                    <ul id="stuff">
+                        <li>Stuff 1</li>
+                        <li>Stuff 2</li>
+                    </ul>
                 </div>
-                <div id="editor">
-                    <nav>
-                        <div id="tab1">
-                            <a href="#">Tab 1</a>
-                        </div>
-                        
-                        <a href="#tab2">Tab 2</a>
-                        <a href="#">Tab 3</a>
-                    </nav>
-                    <p>
-                       SE 137 > W6 > Homework > Tab 1
-                    </p>
-                    <textarea>
-                    </textarea>
-                </div>
-            </section>
-            <footer></footer>
-        </main>
-        <script src="script.js">
+            </div>
+            <div id="editor">
+                <nav>
+                    <div id="tab1">
+                        <a href="#"><img src="images/plane.png" height="20px">Tab 1</a>
+                    </div>
+                    <div id="tab2">
+                        <a href="#"><img src="images/plane.png" height="20px">Tab 2</a>
+                    </div>
+                    <div id="tab3">
+                        <a href="#"><img src="images/plane.png" height="20px">Tab 3</a>
+                    </div>
+                </nav>
+                <p>
+                   <u>SE 137 > W6 > Homework > Tab 1</u>
+                </p>
+                <textarea>
+                </textarea>
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+    <script src="script1.js">
 
-        </script>
-    </body>
-    </html>
+    </script>
+</body>
+</html>
