@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
@@ -136,26 +135,25 @@ h1{
     padding-left: 25px;
 }
 .trayIcon{
-	background: url('images/sprites.png') no-repeat -160px -15px;
     transform: scale(2);
     width: 26px;
     height: 32px;
+    margin-top: 20px;
     margin-right: 8px;
     align-self: center;
     
 }
 .appIcon{
-    align-self: center;
-    margin-top: 30px;
-    background: url('images/sprites.png') no-repeat -217px -2px;
+    align-self: left;
     transform: scale(2);
 	width: 11px;
 	height: 11px;
+    margin-top: 40px;
 }
 .trash{
-    align-self: center;
     background: url('images/sprites.png') no-repeat -458px 0;
     transform: scale(2);
+    align-self: center;
 	width: 11px;
 	height: 13px;
     margin-top: 825px;
@@ -181,6 +179,7 @@ a:hover{
 }
 .appIcon:hover{
     background: url('images/sprites.png') no-repeat -217px -191px;
+    align-self: center;
 	width: 11px;
 	height: 11px;
 }
@@ -250,4 +249,17 @@ ul#stuff li:hover{
 
 b{
     color: rgba(0, 88, 169, 1);
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    color: white;
+}
+.signal{
+    width: 20px;
+    height: 20px;
+    align-self: center;
 }
