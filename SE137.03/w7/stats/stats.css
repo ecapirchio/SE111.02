@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Roboto+Mono&display=swap');
+
+html, body{
+    margin:0;
+    height:100vh;
+    font-family: Roboto Mono;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    width:80%;
+    border-collapse: collapse;
+}
+ td{
+    border-bottom:1px solid black;
+}
+
+thead{
+    background-color: cornflowerblue;
+    color: cyan;
+}
+
+h1{
+    background-color: crimson;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1001px){
+    .abr{
+        display: none;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+
+    thead, tbody{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 501px){
+    .full{
+        display: none;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    thead, tbody{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 0px){
+    .stat{
+        display:none;
+    }
+    h1{
+        font-size: 2em;
+    }
+    thead{
+        font-size: 1.5em;
+    }
+    tbody{
+        font-size: 1.25em;
+    }
+}
