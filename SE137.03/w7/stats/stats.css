@@ -9,6 +9,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
+    background-color: lightblue;
 }
 table{
     width:80%;
@@ -19,12 +20,13 @@ table{
 }
 
 thead{
-    background-color: cornflowerblue;
-    color: cyan;
+    background-color: lawngreen;
+    color: blue;
 }
 
 h1{
-    background-color: crimson;
+    background-color: purple;
+    color: white;
 }
 
 @media screen and (max-width: 1920px) and (min-width: 1001px){
