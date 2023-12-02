@@ -1,0 +1,88 @@
+.flexbox-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox-item{
+    width: 200px;
+    background-color: #dfdfdf;
+    align-content: space-around;
+}
+
+.header{
+    background-color: #dfdfdf;
+    display: flex;
+    align-items: flex-start;
+    min-height: 50px;
+    min-width: 100%;
+    flex-direction: row;
+}
+
+.featuredProjects{
+    display: flex;
+    background-color: #3B41D8;
+    padding: .5em;
+    width: 210px;
+    height: 75px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.allProjects{
+    display: flex;
+    background-color: #3B41D8;
+    padding: .5em;
+    width: 210px;
+    height: 75px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.featuredProjectsImage{
+    align-items: center;
+    min-height: 200px;
+    min-width: 200px;
+    border: 3px solid #3B41D8;
+    justify-content: space-around;
+    background-image: url("images/ovo.jpg");
+}
+
+.flexbox-item-3{
+    min-height: 200px;
+    min-width: 200px;
+    border: 3px solid #333;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.flexbox-item-4{
+    min-height: 200px;
+    min-width: 200px;
+    border: 3px solid #333;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.flexbox-item-5{
+    min-height: 300px;
+    min-width: 300px;
+    border: 3px solid #333;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.flexbox-item-6{
+    min-height: 300px;
+    min-width: 300px;
+    border: 3px solid #333;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.flexbox-item-7{
+    min-height: 300px;
+    min-width: 300px;
+    border: 3px solid #333;
+    justify-content: space-around;
+    margin: 10px;
+}
