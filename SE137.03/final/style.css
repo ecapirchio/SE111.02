@@ -8,6 +8,15 @@
     align-content: space-around;
 }
 
+.grid-container{
+    grid-template-areas:
+    "header header header header"
+    "left left right right"
+    "left left right right"
+    "left left right right"
+    "footer footer footer footer";
+}
+
 .header{
     background-color: #dfdfdf;
     display: flex;
@@ -15,6 +24,13 @@
     min-height: 150px;
     min-width: 100%;
     flex-direction: row;
+    grid-area: header;
+}
+.left{
+    grid-area: left;
+}
+.right{
+    grid-area: right;
 }
 .headerText{
     font-size: 48px;
@@ -203,6 +219,7 @@
     min-width: 100%;
     flex-direction: row;
     margin-top: 10px;
+    grid-area: footer;
 }
 .copyright{
     min-width: 185px;
