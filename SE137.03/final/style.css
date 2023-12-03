@@ -5,7 +5,6 @@
 
 .flexbox-item{
     width: 200px;
-    background-color: #dfdfdf;
     align-content: space-around;
 }
 
@@ -13,9 +12,12 @@
     background-color: #dfdfdf;
     display: flex;
     align-items: flex-start;
-    min-height: 50px;
+    min-height: 150px;
     min-width: 100%;
     flex-direction: row;
+}
+.headerText{
+    font-size: 48px;
 }
 
 .featuredProjects{
@@ -26,6 +28,10 @@
     height: 75px;
     font-size: 20px;
     text-align: center;
+    margin-left: 500px;
+    align-items: center;
+    margin-top: 60px;
+    color: white;
 }
 
 .allProjects{
@@ -36,53 +42,179 @@
     height: 75px;
     font-size: 20px;
     text-align: center;
+    margin-left: 50px;
+    align-items: center;
+    margin-top: 60px;
+    color: white;
 }
 
 .featuredProjectsImage{
     align-items: center;
-    min-height: 200px;
-    min-width: 200px;
+    min-height: 337.838px;
+    min-width: 600px;
+    margin-top: 30px;
     border: 3px solid #3B41D8;
     justify-content: space-around;
-    background-image: url("images/ovo.jpg");
+    background-image: url("images/Friends-TV-Show.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px 337.838px;
 }
 
-.flexbox-item-3{
-    min-height: 200px;
+.featuredProject{
+    min-height: 100px;
+    min-width: 500px;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    background-color: #3B41D8;
+}
+
+.featuredProjectText{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.aboutFeaturedProject{
+    min-height: 47px;
+    min-width: 600px;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.viewProject{
+    min-height: 50px;
     min-width: 200px;
-    border: 3px solid #333;
+    background-color: #dfdfdf;
     justify-content: space-around;
     margin: 10px;
+    margin-left: 200px;
 }
 
-.flexbox-item-4{
-    min-height: 200px;
-    min-width: 200px;
-    border: 3px solid #333;
-    justify-content: space-around;
-    margin: 10px;
+.viewProjectText{
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 10px;
 }
 
-.flexbox-item-5{
-    min-height: 300px;
-    min-width: 300px;
-    border: 3px solid #333;
+.bio{
+    min-height: 60px;
+    min-width: 180px;
+    background-color: #3B41D8;
     justify-content: space-around;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 200px;
 }
 
-.flexbox-item-6{
-    min-height: 300px;
-    min-width: 300px;
-    border: 3px solid #333;
-    justify-content: space-around;
-    margin: 10px;
+.bioText{
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    color: white;
 }
 
-.flexbox-item-7{
-    min-height: 300px;
-    min-width: 300px;
-    border: 3px solid #333;
+.aboutBio{
+    min-width: 497px;
+    min-height: 95px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.githubRepos{
+    min-height: 60px;
+    min-width: 360px;
+    background-color: #3B41D8;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.githubReposText{
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.myGithub{
+    min-height: 50px;
+    min-width: 150px;
+    background-color: #dfdfdf;
     justify-content: space-around;
     margin: 10px;
+    margin-left: 200px;
+}
+
+.myGithubText{
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.socials{
+    min-height: 60px;
+    min-width: 240px;
+    background-color: #3B41D8;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 175px;
+}
+
+.socialsText{
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.instagram{
+    min-height: 100px;
+    min-width: 100px;
+    background-image: url("images/instagram.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    margin-left: 165px;
+    margin-top: 10px;
+}
+
+.twitter{
+    min-height: 100px;
+    min-width: 100px;
+    background-image: url("images/twitter.png");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    margin-left: 165px;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: #dfdfdf;
+    display: flex;
+    align-items: flex-end;
+    min-height: 75px;
+    min-width: 100%;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.copyright{
+    min-width: 185px;
+    min-height: 38px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.figma{
+    min-width: 185px;
+    min-height: 38px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
 }
