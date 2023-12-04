@@ -1,0 +1,17 @@
+.container-fluid{
+    background-color: blue;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1500px) {
+    /* Show the navbar toggler and hide the navbar links */
+    .navbar-collapse {
+        display: none;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+.container{
+    background-color: green;
+}
