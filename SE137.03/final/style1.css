@@ -2,7 +2,7 @@
     background-color: blue;
 }
 
-@media screen and (max-width: 1920px) and (min-width: 1500px) {
+@media screen and (max-width: 1000px) and (min-width: 10px) {
     /* Show the navbar toggler and hide the navbar links */
     .navbar-collapse {
         display: none;
