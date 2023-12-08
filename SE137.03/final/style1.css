@@ -1,15 +1,5 @@
 .container-fluid{
-    background-color: blue;
-}
-
-@media screen and (max-width: 1000px) and (min-width: 0px) {
-    /* Show the navbar toggler and hide the navbar links */
-    .navbar-collapse {
-        display: none;
-    }
-    .navbar-toggler {
-        display: block;
-    }
+    height: 50px;
 }
 
 .custom-border {
@@ -26,9 +16,17 @@
     margin-right: 50px;
 }
 
-.description-background {
-    background-color: #ccc; /* Gray background */
+.description{
     padding: 15px; /* Add padding for better visibility */
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.view-project{
+    background-color: #D9D9D9;
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .bio-column{
@@ -37,20 +35,40 @@
     padding: 15px; /* Add padding for better visibility */
     margin-left: 200px;
     margin-right: 200px;
+    margin-top: 50px;
 }
 
 .github{
     background-color: #3B41D8;
     color: #fff;
     padding: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
+    font-size: 40px;
 }
 
 .repos{
     background-color: #D9D9D9;
     padding: 5px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 20px;
+}
+
+.socials{
+    background-color: #3B41D8;
+    padding: 5px;
+    color: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.instagram{
+    padding: 10px;
+}
+
+.twitter{
+    padding: 10px;
+}
+
+.img-fluid{
+    margin-top: 50px;
 }
