@@ -1,25 +1,39 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Select all item elements
-    var items = document.querySelectorAll(".item");
+function checkConnections(selectedItems) {
+    var answerKey = {
+        connection1: ['red', 'yellow', 'green', 'blue'],
+        connection2: ['hour', 'day', 'month', 'year'],
+        connection3: ['A', 'B', 'C', 'D'],
+        connection4: ['one', 'two', 'three', 'four']
+    };
 
-    // Select the submit button
-    var submitButton = document.getElementById("submit-button");
-    
-    // Add click event listeners to each item
-    items.forEach(function (item) {
-        item.addEventListener("click", function () {
-            // Toggle the selected class on click
-            this.classList.toggle("selected");
+    // Check each connection in the answer key
+    for (var connection in answerKey) {
+        // Get the array of items for the current connection
+        var correctItems = answerKey[connection];
 
-            // Check the number of selected items
-            var selectedItems = document.querySelectorAll(".item.selected");
-             
-            // If exactly four items are selected, activate the submit button
-            if (selectedItems.length === 4) {
-                submitButton.classList.remove("inactive");
-            } else {
-                submitButton.classList.add("inactive");
-            }
-        });
+        // Check if the selected items match the correct items for this connection
+        if (arraysEqual(selectedItems, correctItems)) {
+            // Match found, you can return the connection name or take any other action
+            return connection;
+        }
+    }
+
+    // No matches found
+    return null;
+}
+
+// Function to check if two arrays are equal
+function arraysEqual(arr1, arr2) {
+    return arr1.length === arr2.length && arr1.every(function (value, index) {
+        return value === arr2[index];
     });
-});
+}
+
+var selectedItems = ['red', 'yellow', 'green', 'blue'];
+var result = checkConnections(selectedItems);
+
+if (result) {
+    console.log('Match found for connection: ' + result);
+} else {
+    console.log('No match found.');
+}
