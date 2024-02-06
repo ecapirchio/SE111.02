@@ -5,13 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Text</title>
 <style>
-    body, html {
-        height: 100%;
+    body {
         margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        position: relative;
         background-image: url('constellation.jpg');
+        background-position: center;
+        background-size: 75%;
+        height: 100%;
+        width: 100%;
+        text-align: center; /* Center text horizontally */
     }
     
     .glow {
@@ -21,7 +30,11 @@
         text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 50px #00aaff, 0 0 60px #00aaff, 0 0 70px #00aaff, 0 0 80px #00aaff;
         cursor: pointer; /* Add pointer cursor to indicate clickability */
         opacity: 0; /* Set initial opacity to 0 */
-        animation: fadeIn 5s forwards; /* Use animation to fade in */
+        animation: fadeIn 2s forwards; /* Use animation to fade in */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center text vertically and horizontally */
     }
 
     @keyframes fadeIn {
@@ -36,10 +49,12 @@
 </head>
 <body>
 
-<h1 class="glow" id="text">Text</h1>
+<div class="container">
+    <h1 class="glow" id="text">Text</h1>
+</div>
 
 <audio id="myAudio">
-    <source src="song.mp3" type="audio/mpeg">
+    <source src="fallForMe.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
