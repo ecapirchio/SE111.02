@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('constellation.jpg');
+    }
+    
+    .glow {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 50px #00aaff, 0 0 60px #00aaff, 0 0 70px #00aaff, 0 0 80px #00aaff;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="glow">Text</h1>
+
+<audio id="myAudio" autoplay>
+    <source src="fallForMe.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    window.onload = function() {
+      // Get the audio element
+      var audio = document.getElementById("myAudio");
+      // Play the audio
+      audio.play();
+    };
+</script>
+
+</body>
+</html>
