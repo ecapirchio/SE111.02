@@ -20,7 +20,7 @@
         background-size: 75%;
         height: 100%;
         width: 100%;
-        text-align: center; /* Center text horizontally */
+        text-align: center;
     }
     
     .glow {
@@ -28,13 +28,13 @@
         font-weight: bold;
         color: #fff;
         text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 50px #00aaff, 0 0 60px #00aaff, 0 0 70px #00aaff, 0 0 80px #00aaff;
-        cursor: pointer; /* Add pointer cursor to indicate clickability */
-        opacity: 0; /* Set initial opacity to 0 */
-        animation: fadeIn 2s forwards; /* Use animation to fade in */
+        cursor: pointer;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); /* Center text vertically and horizontally */
+        transform: translate(-50%, -50%);
     }
 
     @keyframes fadeIn {
@@ -59,7 +59,6 @@
 </audio>
 
 <script>
-    // Function to play audio when text is clicked
     document.getElementById("text").addEventListener("click", function() {
         var audio = document.getElementById("myAudio");
         audio.play();
