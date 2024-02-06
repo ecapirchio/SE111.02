@@ -20,6 +20,17 @@
         color: #fff;
         text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 50px #00aaff, 0 0 60px #00aaff, 0 0 70px #00aaff, 0 0 80px #00aaff;
         cursor: pointer; /* Add pointer cursor to indicate clickability */
+        opacity: 0; /* Set initial opacity to 0 */
+        animation: fadeIn 5s forwards; /* Use animation to fade in */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 </style>
 </head>
@@ -28,7 +39,7 @@
 <h1 class="glow" id="text">Text</h1>
 
 <audio id="myAudio">
-    <source src="fallForMe.mp3" type="audio/mpeg">
+    <source src="song.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
