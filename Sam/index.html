@@ -19,25 +19,25 @@
         font-weight: bold;
         color: #fff;
         text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 50px #00aaff, 0 0 60px #00aaff, 0 0 70px #00aaff, 0 0 80px #00aaff;
+        cursor: pointer; /* Add pointer cursor to indicate clickability */
     }
 </style>
 </head>
 <body>
 
-<h1 class="glow">Text</h1>
+<h1 class="glow" id="text">Text</h1>
 
-<audio id="myAudio" autoplay>
+<audio id="myAudio">
     <source src="fallForMe.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
 <script>
-    window.onload = function() {
-      // Get the audio element
-      var audio = document.getElementById("myAudio");
-      // Play the audio
-      audio.play();
-    };
+    // Function to play audio when text is clicked
+    document.getElementById("text").addEventListener("click", function() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+    });
 </script>
 
 </body>
