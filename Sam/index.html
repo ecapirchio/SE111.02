@@ -32,9 +32,38 @@
         opacity: 0;
         animation: fadeIn 10s forwards;
         position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .glow-2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 50px #00aaff, 0 0 60px #00aaff, 0 0 70px #00aaff, 0 0 80px #00aaff;
+        opacity: 0;
+        animation: fadeIn 10s forwards;
+        animation-delay: 5s; /* Add animation delay here */
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .glow-3 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff, 0 0 50px #00aaff, 0 0 60px #00aaff, 0 0 70px #00aaff, 0 0 80px #00aaff;
+        opacity: 0;
+        animation: fadeIn 10s forwards;
+        animation-delay: 10s;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
     }
 
     @keyframes fadeIn {
@@ -50,7 +79,9 @@
 <body>
 
 <div class="container">
-    <h1 class="glow" id="text">Text</h1>
+    <h1 class="glow" id="text">You are my whole world and everything in it</h1>
+    <h1 class="glow-2" id="text2">I'm so grateful to call you mine</h1>
+    <h1 class="glow-3" id="text3">I love you</h1>
 </div>
 
 <audio id="myAudio">
@@ -62,6 +93,10 @@
     document.getElementById("text").addEventListener("click", function() {
         var audio = document.getElementById("myAudio");
         audio.play();
+        
+        setTimeout(function() {
+            document.getElementById("text2").style.opacity = "1";
+        }, 5000); // 5000 milliseconds = 5 seconds
     });
 </script>
 
